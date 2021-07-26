@@ -12,7 +12,7 @@
       <div class="wrapper">
         <nav class="header__nav nav">
           <a class="nav__logo" href="#">
-            <img src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37 ">
+            <img src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
           </a>
           <img src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
           <ul class="nav__list">
@@ -37,22 +37,23 @@
           программу питания для вашего кота</p>
           <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
             <!----Text-->
-            <fieldset class="form__group"></fieldset>
-            <legend class="visually-hidden"></legend>
-              <ul class="form__list text-list">
-                <li class="form__field text-field">
-                  <label class="text-field__label" for="name">ИМЯ:*</label>
-                  <input class="text-field__input" type="text" id="name" placeholder="Барсик">
-                </li>
-                <li class="form__field text-field">
-                  <label class="text-field__label" for="weight">Вес (кг):*:*</label>
-                  <input class="text-field__input" type="text" id="weight" placeholder="7">
-                </li>
-                <li class="form__field text-field">
-                  <label class="text-field__label" for="age">Возраст (лет):</label>
-                  <input class="text-field__input" type="text" id="age" placeholder="7">
-                </li>
-              </ul>
+              <fieldset class="form__group">
+                <legend class="visually-hidden"></legend>
+                <ul class="form__list text-list">
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="name">ИМЯ:*</label>
+                    <input class="text-field__input" type="text" id="name" placeholder="Барсик">
+                  </li>
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="weight">Вес (кг):*:*</label>
+                    <input class="text-field__input" type="text" id="weight" placeholder="7">
+                  </li>
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="age">Возраст (лет):</label>
+                    <input class="text-field__input" type="text" id="age" placeholder="7">
+                  </li>
+                </ul>
+              </fieldset>
 
               <!---radio--->
               <fieldset class="form__group">
@@ -63,8 +64,8 @@
                     <label class="radio-label__control" for="weight-loss">Похудение</label>
                   </li>
                   <li class="form__radio radio-input">
-                    <input class="radio-input__control" type="radio" name="choice" id="more mass" value="more mass">
-                    <label class="radio-label__control" for="more mass">Набор массы</label>
+                    <input class="radio-input__control" type="radio" name="choice" id="more-mass" value="more-mass">
+                    <label class="radio-label__control" for="more-mass">Набор массы</label>
                   </li>
                   <li class="form__radio radio-input">
                     <input class="radio-input__control" type="radio" name="choice" id="advice" value="advice">
@@ -89,7 +90,7 @@
               </fieldset>
 
               <!---Comment--->
-              <fieldset class="form__group textarea">
+              <fieldset class="form__group textarea-field">
                 <legend class="textarea__title">Комментарий</legend>
                 <textarea class="textarea__field" name="comment"
                   id="comment_text" cols="30" rows="10"
@@ -98,7 +99,7 @@
               </fieldset>
 
               <!---More--->
-              <fieldset class="form__group">
+              <fieldset class="form__group checkbox-field">
                 <legend class="checkbox__title">Дополнительно</legend>
                 <ul class="checkbox-list checkbox">
                   <li class="checkbox__item">
@@ -129,10 +130,7 @@
                 </ul>
               </fieldset>
               <button class="button" type="submit">Отправить заявку</button>
-              <p class="form__text">
-                * — Обязательные поля
-              </p>
-            </fieldset>
+              <p class="form__text">* — Обязательные поля</p>
           </form>
       </div>
     </main>
@@ -150,7 +148,7 @@
         </div>
 
         <div class="footer__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
           <img src="img/index-img/footer-map-logo.png" alt="Лого-метка на карте" width="57" height="53" class="footer__map-logo">
         </div>
 
