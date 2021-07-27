@@ -30,92 +30,109 @@
       </div>
     </header>
 
-    <main class="main-index">
-      <!---Section Food--->
-      <section class="food">
-        <div class="wrapper">
-          <h2 class="food__title">Функциональное питание для котов</h2>
-          <p class="food__text">Занялся собой? Займись котом!</p>
-          <a class="food__button button" href="nav__link">Подобрать программу</a>
-          <img class="food__img" width="280" height="270" src="img/index-img/food-img-mobile.png" alt="Изображение питания для котов">
-        </div>
-      </section>
+    <main class="form-content">
+      <div class="wrapper">
+        <h1 class="form-content__tittle">Подбор программы</h1>
+        <p class="form-content__subtext">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+          <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
+            <!----Text-->
+              <fieldset class="form__group">
+                <legend class="visually-hidden"></legend>
+                <ul class="form__list text-list">
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="name">ИМЯ:*</label>
+                    <input class="text-field__input" type="text" id="name" placeholder="Барсик">
+                  </li>
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="weight">Вес (кг):*:*</label>
+                    <input class="text-field__input" type="text" id="weight" placeholder="7">
+                  </li>
+                  <li class="form__field text-field">
+                    <label class="text-field__label" for="age">Возраст (лет):</label>
+                    <input class="text-field__input" type="text" id="age" placeholder="7">
+                  </li>
+                </ul>
+              </fieldset>
 
-      <!---Section Programss--->
-      <section class="programs">
-        <div class="wrapper">
-          <article class="program__item program program--slim">
-            <h3 class="program__title">Похудение</h3>
-            <p class="program__subtext">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy pro поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__link" href="#">каталог slim</a>
-          </article>
-          <article class="program__item program program--pro">
-            <h3 class="program__title">Набор массы</h3>
-            <p class="program__subtext">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__link" href="#">каталог pro</a>
-          </article>
-        </div>
-      </section>
+              <!---radio--->
+              <fieldset class="form__group">
+                <legend class="visually-hidden"></legend>
+                <ul class="form__list radio-list">
+                  <li class="form__radio radio-input">
+                    <input class="radio-input__control" type="radio" name="choice" id="weight-loss" value="weight-loss">
+                    <label class="radio-label__control" for="weight-loss">Похудение</label>
+                  </li>
+                  <li class="form__radio radio-input">
+                    <input class="radio-input__control" type="radio" name="choice" id="more-mass" value="more-mass">
+                    <label class="radio-label__control" for="more-mass">Набор массы</label>
+                  </li>
+                  <li class="form__radio radio-input">
+                    <input class="radio-input__control" type="radio" name="choice" id="advice" value="advice">
+                    <label class="radio-label__control" for="advice">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-      <!---Section Description--->
-      <section class="desc">
-        <div class="wrapper">
-          <h2 class="desc__title">Как это работет</h2>
-          <ul class="desc__list">
-            <li class="desc__item">
-              <p class="desc__text">Функциональное питание
-                содержит только полезные
-                питательные вещества.</p>
-            </li>
-            <li class="desc__item">
-              <p class="desc__text">Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.</p>
-            </li>
-            <li class="desc__item">
-              <p class="desc__text">Замените один-два приема
-                обычной еды на наше
-                функциональное питание.</p>
-            </li>
-            <li class="desc__item">
-              <p class="desc__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <!---Contacts--->
+              <fieldset class="form__group">
+                <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+                <ul class="form__list contacts">
+                  <li class="contacts__item">
+                    <label class="contacts-label__control" for="mail">E-mail:*</label>
+                    <input class="contacts-input__control" type="email" id="mail" placeholder="kuklachev@gmail.com">
+                  </li>
+                  <li class="contacts__item">
+                    <label class="contacts-label__control" for="tel">Телефон:*</label>
+                    <input class="contacts-input__control" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+                  </li>
+                </ul>
+              </fieldset>
 
-      <!---Section-Example--->
-      <section class="example">
-        <div class="wrapper">
-          <div class="example__inner">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <ul class="example__list">
-              <li class="example__item">
-                <p class="example__number">5 КГ</p>
-                <p class="example__text">снижение веса</p>
-              </li>
-              <li class="example__item">
-                <p class="example__number">60 ДНЕЙ</p>
-                <p class="example__text">затрачено времени</p>
-              </li>
-            </ul>
-            <p class="example__subtext">
-              Затраты на питание: 15 000 РУБ.
-            </p>
-          </div>
-          <div class="example__slider slider">
-            <div class="slider__preview">
-              <img src="img/index-img/example-big-cat.jpg" alt="Большой кот" width="311" height="232" class="example__img">
-            </div>
-            <div class="slider__controls">
-              <button class="slider__text">Было</button>
-              <div class="slider__scale"></div>
-              <button class="slider__text">Стало</button>
-            </div>
-          </div>
-        </div>
-      </section>
+              <!---Comment--->
+              <fieldset class="form__group textarea-field">
+                <legend class="textarea__title">Комментарий</legend>
+                <textarea class="textarea__field" name="comment"
+                  id="comment_text" cols="30" rows="10"
+                  placeholder="Расскажите обо всех повадках кота">
+                </textarea>
+              </fieldset>
+
+              <!---More--->
+              <fieldset class="form__group checkbox-field">
+                <legend class="checkbox__title">Дополнительно</legend>
+                <ul class="checkbox-list checkbox">
+                  <li class="checkbox__item">
+                    <label class="checkbox-label__control" for="checkbox-sweetener">
+                      <input class="checkbox-input__control" type="checkbox" name="sweetener" id="checkbox-sweetener" value="sweetener"
+                        checked>
+                      Сахарозаменитель
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox-label__control" for="checkbox-water">
+                      <input class="checkbox-input__control" type="checkbox" name="water" id="checkbox-water" value="water">
+                      Питьевая вода
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox-label__control" for="checkbox-milk">
+                      <input class="checkbox-input__control" type="checkbox" name="milk" id="checkbox-milk" value="milk">
+                      Молоко
+                    </label>
+                  </li>
+                  <li class="checkbox__item">
+                    <label class="checkbox-label__control" for="checkbox-vitamins">
+                      <input class="checkbox-input__control" type="checkbox" name="vitamins" id="checkbox-vitamins" value="vitamins">
+                      Витамины
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button" type="submit">Отправить заявку</button>
+              <p class="form__text">* — Обязательные поля</p>
+          </form>
+      </div>
     </main>
 
     <!---Footer--->
@@ -155,7 +172,7 @@
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/">
                 <svg class="social__icon" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.5 0.833252H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.5 0.8332s52H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
             </li>
