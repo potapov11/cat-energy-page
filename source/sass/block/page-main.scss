@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  width: 320px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: var(--special_dark-grey);
+  border: 1px solid black;
+}
+

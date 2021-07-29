@@ -1,0 +1,17 @@
+.desc {
+  font-weight: 400;
+}
+
+.bold-title {
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--title_black);
+}
+
+.desc__list {
+  @include list-none;
+}
+
+.desc__text {
+  font-family: "Arial";
+}

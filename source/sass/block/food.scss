@@ -1,0 +1,39 @@
+.food {
+  background-image: url("../../img/index-img/food-bg.png");
+  background-repeat: no-repeat;
+  background-position: top top;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.food__title {
+  margin: 0;
+  padding: 25px 0 27px 0;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--basic_white);
+}
+
+.food__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: var(--basic_white);
+  padding: 0 0 29px 0;
+  text-transform: uppercase;
+}
+
+.button {
+  display: block;
+  padding: 10px;
+  min-width: 280px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: var(--basic_green);
+  color: var(--basic_white);
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
