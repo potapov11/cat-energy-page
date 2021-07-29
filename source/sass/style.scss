@@ -1,1 +1,12 @@
 // Начните писать стили здесь
+@import "global/normalize.css";
+@import "global/fonts.scss";
+@import "block/page-main.scss";
+@import "block/root.scss";
+@import "block/header.scss";
+@import "block/food.scss";
+@import "block/programs.scss";
+@import "block/desc.scss";
+@import "block/example.scss";
+@import "block/footer.scss";
+@import "block/index-main.scss";
