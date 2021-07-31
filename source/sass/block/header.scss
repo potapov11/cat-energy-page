@@ -1,38 +1,7 @@
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .header__nav {
   display: flex;
   align-items: center;
   padding: 10px 0 17px 0;
 }
 
-@mixin list-none {
-  list-style: none;
-}
-
-.nav__list {
-  @include list-none;
-}
-
-.nav__link {
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  color: var(--title-black);
-  text-decoration: none;
-}

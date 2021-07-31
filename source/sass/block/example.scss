@@ -1,5 +1,5 @@
 .example__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }
 
 .example__number {
@@ -8,7 +8,7 @@
 }
 
 .example__item-text {
-  font-family: "Arial";
+  font-family: $font_basic;
   font-size: 12px;
   line-height: 12px;
 }

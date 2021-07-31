@@ -1,7 +1,7 @@
 .food {
   background-image: url("../../img/index-img/food-bg.png");
   background-repeat: no-repeat;
-  background-position: top top;
+  background-position: top center;
   border: 1px solid transparent;
   text-align: center;
 }
@@ -23,17 +23,4 @@
   color: var(--basic_white);
   padding: 0 0 29px 0;
   text-transform: uppercase;
-}
-
-.button {
-  display: block;
-  padding: 10px;
-  min-width: 280px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: var(--basic_green);
-  color: var(--basic_white);
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
 }

@@ -9,9 +9,19 @@
 }
 
 .desc__list {
-  @include list-none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .desc__text {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
 }
+
+.desc__name,
+.desc__value {
+  font-family: $font_basic;
+  font-size: 12px;
+  line-height: 16px;
+}
+

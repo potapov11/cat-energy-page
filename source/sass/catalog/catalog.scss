@@ -8,30 +8,3 @@
   padding: 0;
   list-style: none;
 }
-
-.products__text-link {
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  color: var(--dark_black);
-}
-
-.desc__name,
-.desc__value,
-.show__text {
-  font-family: "Arial";
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.show__title {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.show__link {
-  color: var(--special_dark-grey);
-  background-color: var(--basic_grey);
-  font-size: 16px;
-  line-height: 20px;
-}
