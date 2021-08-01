@@ -21,8 +21,19 @@
 @import "block/programs.scss";
 @import "block/program.scss";
 @import "block/program__group.scss";
+@import "block/title.scss";
+
+
+//catalog
 @import "catalog/catalog.scss";
 @import "catalog/extra.scss";
 @import "catalog/products.scss";
 @import "catalog/show.scss";
-@import "catalog/sublist.scss"
+@import "catalog/sublist.scss";
+
+//form
+@import "form/form-content.scss";
+@import "form/form-title.scss";
+@import "form/checkbox-field.scss";
+@import "form/contacts.scss";
+@import "form/text-field.scss";
