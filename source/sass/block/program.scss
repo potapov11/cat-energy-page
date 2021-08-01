@@ -1,5 +1,5 @@
 .program__item {
-  background-color: var(--basic_grey);
+  background-color: $basic_grey;
   padding: 21px 33px 18px 22px;
 }
 
@@ -11,19 +11,20 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--title_black);
+  color: $title_black;
   text-align: center;
 }
 
 .program__subtext {
   font-family: $font_basic;
-  color: var(--special_dark-grey);
+  color: $special_dark-grey;
 }
 
 .program__link {
+  font-family: $font_basic;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: var(--title_black);
+  color: $title_black;
   text-decoration: none;
 }

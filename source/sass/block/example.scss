@@ -14,7 +14,8 @@
 }
 
 .example__subtext {
+  font-family: $font_basic;
   font-size: 14px;
   line-height: 20px;
-  color: var(--title_black);
+  color: $title_black;
 }

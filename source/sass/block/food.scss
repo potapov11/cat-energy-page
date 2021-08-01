@@ -12,7 +12,7 @@
   font-size: 32px;
   line-height: 36px;
   font-weight: 400;
-  color: var(--basic_white);
+  color: $basic_white;
 }
 
 .food__text {
@@ -20,7 +20,7 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  color: var(--basic_white);
+  color: $basic_white;
   padding: 0 0 29px 0;
   text-transform: uppercase;
 }

@@ -3,9 +3,10 @@
 }
 
 .bold-title {
+  font-family: $font_basic;
   font-size: 36px;
   line-height: 40px;
-  color: var(--title_black);
+  color: $title_black;
 }
 
 .desc__list {
@@ -15,7 +16,7 @@
 }
 
 .desc__text {
-  font-family: "Arial", sans-serif;
+  font-family: $font_basic;
 }
 
 .desc__name,
@@ -24,4 +25,3 @@
   font-size: 12px;
   line-height: 16px;
 }
-
