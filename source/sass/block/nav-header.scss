@@ -1,0 +1,11 @@
+.nav__list {
+  @include list-reset;
+}
+
+.nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $title_black;
+  text-decoration: none;
+}

@@ -1,0 +1,21 @@
+.example__text {
+  font-family: $font_basic;
+}
+
+.example__number {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__item-text {
+  font-family: $font_basic;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__subtext {
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 20px;
+  color: $title_black;
+}

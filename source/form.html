@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="main-page">
+  <body class="page-body">
     <h1 class="visually-hidden">Магазин Cat Energy - программы и питания для похудения для котов</h1>
 
     <!---Header--->
@@ -32,7 +33,7 @@
 
     <main class="form-content">
       <div class="wrapper">
-        <h1 class="form-content__tittle">Подбор программы</h1>
+        <h2 class="form-content__title">Подбор программы</h2>
         <p class="form-content__subtext">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
           <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
@@ -56,7 +57,7 @@
               </fieldset>
 
               <!---radio--->
-              <fieldset class="form__group">
+              <fieldset class="form__group form__radio">
                 <legend class="visually-hidden"></legend>
                 <ul class="form__list radio-list">
                   <li class="form__radio radio-input">
@@ -76,7 +77,7 @@
 
               <!---Contacts--->
               <fieldset class="form__group">
-                <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+                <legend class="contacts__title form__title">Контактные данные (владельца кота)</legend>
                 <ul class="form__list contacts">
                   <li class="contacts__item">
                     <label class="contacts-label__control" for="mail">E-mail:*</label>
@@ -91,7 +92,7 @@
 
               <!---Comment--->
               <fieldset class="form__group textarea-field">
-                <legend class="textarea__title">Комментарий</legend>
+                <legend class="textarea__title form__title">Комментарий</legend>
                 <textarea class="textarea__field" name="comment"
                   id="comment_text" cols="30" rows="10"
                   placeholder="Расскажите обо всех повадках кота">
@@ -100,7 +101,7 @@
 
               <!---More--->
               <fieldset class="form__group checkbox-field">
-                <legend class="checkbox__title">Дополнительно</legend>
+                <legend class="checkbox__title form__title">Дополнительно</legend>
                 <ul class="checkbox-list checkbox">
                   <li class="checkbox__item">
                     <label class="checkbox-label__control" for="checkbox-sweetener">
@@ -139,16 +140,16 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="contacts">
-          <div class="footer__contacts invite">
-            <p class="invite__text">приглашаем к сотрудничеству дилеров!</p>
+          <div class="footer__contacts">
+            <p class="footer__invite-text">приглашаем к сотрудничеству дилеров!</p>
           </div>
-          <div class="footer__address address">
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="footer__address">
+            <p class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
 
         <div class="footer__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
+          <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
           <img src="img/index-img/footer-map-logo.png" alt="Лого-метка на карте" width="57" height="53" class="footer__map-logo">
         </div>
 
@@ -172,7 +173,7 @@
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/">
                 <svg class="social__icon" width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.5 0.8332s52H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.5 0.833252H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </a>
             </li>

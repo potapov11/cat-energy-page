@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="main-page">
-    <h1 class="visually-hidden">Магазин Cat Energy - программы и питания для похудения для котов</h1>
-
+  <body class="page-body">
     <!---Header--->
     <header class="header">
+      <h1 class="visually-hidden">Магазин Cat Energy - программы и питания для похудения для котов</h1>
       <div class="wrapper">
         <nav class="header__nav nav">
           <a class="nav__logo" href="#">
@@ -20,7 +20,7 @@
               <a class="nav__link" href="">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Каталог продукции</a>
+              <a class="nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Подбор программы</a>
@@ -30,14 +30,14 @@
       </div>
     </header>
 
-    <main class="main-index">
+    <main class="index-main">
       <!---Section Food--->
       <section class="food">
         <div class="wrapper">
           <h2 class="food__title">Функциональное питание для котов</h2>
           <p class="food__text">Занялся собой? Займись котом!</p>
-          <a class="food__button button" href="nav__link">Подобрать программу</a>
           <img class="food__img" width="280" height="270" src="img/index-img/food-img-mobile.png" alt="Изображение питания для котов">
+          <a class="food__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -45,12 +45,18 @@
       <section class="programs">
         <div class="wrapper">
           <article class="program__item program program--slim">
-            <h3 class="program__title">Похудение</h3>
+            <div class="program-group">
+              <div class="program__circle"></div>
+              <h3 class="program__title pr__title program__slim-title">Похудение</h3>
+            </div>
             <p class="program__subtext">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy pro поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program__link" href="#">каталог slim</a>
           </article>
           <article class="program__item program program--pro">
-            <h3 class="program__title">Набор массы</h3>
+            <div class="program-group">
+              <div class="program__circle"></div>
+              <h3 class="program__title pr__title program__pro-title">Набор массы</h3>
+            </div>
             <p class="program__subtext">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="program__link" href="#">каталог pro</a>
           </article>
@@ -60,7 +66,7 @@
       <!---Section Description--->
       <section class="desc">
         <div class="wrapper">
-          <h2 class="desc__title">Как это работет</h2>
+          <h2 class="desc__title title title__bold">Как это работaет</h2>
           <ul class="desc__list">
             <li class="desc__item">
               <p class="desc__text">Функциональное питание
@@ -88,16 +94,16 @@
       <section class="example">
         <div class="wrapper">
           <div class="example__inner">
-            <h2 class="example__title">Живой пример</h2>
+            <h2 class="example__title title title--bold">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <ul class="example__list">
               <li class="example__item">
                 <p class="example__number">5 КГ</p>
-                <p class="example__text">снижение веса</p>
+                <p class="example__item-text">снижение веса</p>
               </li>
               <li class="example__item">
                 <p class="example__number">60 ДНЕЙ</p>
-                <p class="example__text">затрачено времени</p>
+                <p class="example__item-text">затрачено времени</p>
               </li>
             </ul>
             <p class="example__subtext">
@@ -122,16 +128,16 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="contacts">
-          <div class="footer__contacts invite">
-            <p class="invite__text">приглашаем к сотрудничеству дилеров!</p>
+          <div class="footer__contacts">
+            <p class="footer__invite-text">приглашаем к сотрудничеству дилеров!</p>
           </div>
-          <div class="footer__address address">
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="footer__address">
+            <p class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
 
         <div class="footer__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
+          <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
           <img src="img/index-img/footer-map-logo.png" alt="Лого-метка на карте" width="57" height="53" class="footer__map-logo">
         </div>
 

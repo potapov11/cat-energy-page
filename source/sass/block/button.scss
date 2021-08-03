@@ -1,0 +1,11 @@
+.button {
+  display: flex;
+  align-items: center;
+  font-family: $font_custom;
+  justify-content: center;
+  background-color: $green;
+  color: $basic_white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,14 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  margin: 0;
+  font-family: $font_custom;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: $special_dark-grey;
+  border: 1px solid rgb(19, 15, 15);
+}

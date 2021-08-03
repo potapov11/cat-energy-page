@@ -1,0 +1,31 @@
+.extra__list {
+  @include list-reset;
+}
+
+.extra__title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.extra__subtitle {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.extra__img-text {
+  font-family: $font_basic;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.extra__text {
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.extra__subtext {
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 14px;
+}
