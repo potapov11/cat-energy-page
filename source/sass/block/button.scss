@@ -1,7 +1,7 @@
 .button {
   display: flex;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: $font_custom;
   justify-content: center;
   background-color: $green;
   color: $basic_white;

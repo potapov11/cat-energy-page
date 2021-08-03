@@ -1,7 +1,5 @@
 .extra__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .extra__title {
@@ -18,4 +16,16 @@
   font-family: $font_basic;
   font-size: 16px;
   line-height: 20px;
+}
+
+.extra__text {
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.extra__subtext {
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 14px;
 }

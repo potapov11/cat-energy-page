@@ -5,7 +5,7 @@
 @import "global/visually-hidden.scss";
 @import "global/wrapper.scss";
 @import "global/vars.scss";
-@import "global/button.scss";
+@import "global/mixins.scss";
 
 //Блоки
 @import "block/button.scss";
@@ -14,26 +14,22 @@
 @import "block/food.scss";
 @import "block/footer.scss";
 @import "block/header.scss";
-@import "block/index-main.scss";
 @import "block/nav-header.scss";
 @import "block/page-body.scss";
 @import "block/page.scss";
-@import "block/programs.scss";
 @import "block/program.scss";
-@import "block/program__group.scss";
 @import "block/title.scss";
 
 
 //catalog
-@import "catalog/catalog.scss";
-@import "catalog/extra.scss";
-@import "catalog/products.scss";
-@import "catalog/show.scss";
-@import "catalog/sublist.scss";
-
+@import "block-2/catalog.scss";
+@import "block-2/extra.scss";
+@import "block-2/products.scss";
+@import "block-2/show.scsblock-3";
 //form
-@import "form/form-content.scss";
-@import "form/form-title.scss";
-@import "form/checkbox-field.scss";
-@import "form/contacts.scss";
-@import "form/text-field.scss";
+@import "block-3/form-content.scss";
+@import "block-3/form-title.scss";
+@import "block-3/checkbox-field.scss";
+@import "block-3/contacts.scss";
+@import "block-3/text-field.scss";
+@import "block-3/form-list.scss"
