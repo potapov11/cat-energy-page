@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -13,8 +14,8 @@
         <nav class="header__nav nav">
           <a class="nav__logo" href="#">
             <img src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+            <img src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
           </a>
-          <img src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="">Главная</a>
@@ -26,6 +27,7 @@
               <a class="nav__link" href="">Подбор программы</a>
             </li>
           </ul>
+          <button class="nav__button" type="button"><span class=visually-hidden>Меню</span></button>
         </nav>
       </div>
     </header>
@@ -34,10 +36,15 @@
       <!---Section Food--->
       <section class="food">
         <div class="wrapper">
-          <h2 class="food__title">Функциональное питание для котов</h2>
-          <p class="food__text">Занялся собой? Займись котом!</p>
-          <img class="food__img" width="280" height="270" src="img/index-img/food-img-mobile.png" alt="Изображение питания для котов">
-          <a class="food__button button" href="form.html">Подобрать программу</a>
+          <div class="food__group">
+            <div class="food__info">
+              <h2 class="food__title">Функциональное<br> питание для котов</h2>
+              <p class="food__text">Занялся собой? Займись котом!</p>
+              <img class="food__img" width="280" height="270" src="img/index-img/food-img-mobile.png" alt="Изображение питания для котов">
+              <a class="food__button button" href="form.html">Подобрать программу</a>
+            </div>
+            <div class="food__background"></div>
+          </div>
         </div>
       </section>
 

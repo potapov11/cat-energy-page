@@ -1,10 +1,10 @@
 // Начните писать стили здесь
 @import "global/normalize.css";
+@import "global/vars.scss";
 @import "global/fonts.scss";
 @import "global/box-sizing.scss";
 @import "global/visually-hidden.scss";
 @import "global/wrapper.scss";
-@import "global/vars.scss";
 @import "global/mixins.scss";
 
 //Блоки
@@ -22,14 +22,15 @@
 
 
 //catalog
-@import "block-2/catalog.scss";
-@import "block-2/extra.scss";
-@import "block-2/products.scss";
-@import "block-2/show.scsblock-3";
+@import "block/catalog.scss";
+@import "block/extra.scss";
+@import "block/products.scss";
+@import "block/show.scss";
+
 //form
-@import "block-3/form-content.scss";
-@import "block-3/form-title.scss";
-@import "block-3/checkbox-field.scss";
-@import "block-3/contacts.scss";
-@import "block-3/text-field.scss";
-@import "block-3/form-list.scss"
+@import "block/form-content.scss";
+@import "block/form-title.scss";
+@import "block/checkbox-field.scss";
+@import "block/contacts.scss";
+@import "block/text-field.scss";
+@import "block/form-list.scss"

@@ -4,6 +4,17 @@
   background-position: top center;
   border: 1px solid transparent;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.food__info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .food__title {
@@ -13,6 +24,11 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    color: $title_black;
+    text-align: left;
+  }
 }
 
 .food__text {
@@ -23,4 +39,45 @@
   color: $basic_white;
   padding: 0 0 29px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $title_black;
+    text-align: left;
+  }
+}
+
+  @media (min-width: $desktop-width) {
+    .food__group {
+      display: flex;
+  }
+}
+
+.food__button {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    font-size: 20px;
+    line-height: 20px;
+    width: 244px;
+    text-decoration: none;
+  }
+}
+
+.food__img {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.food__background {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    background-image: url("../../img/index-img/tablet-green-cat.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.food__info {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
