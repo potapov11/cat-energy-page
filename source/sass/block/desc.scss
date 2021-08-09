@@ -6,6 +6,25 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.desc__item {
+  @media (min-width: $tablet-width) {
+    flex: 0 1 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 25%;
+  }
 }
 
 .desc__text {

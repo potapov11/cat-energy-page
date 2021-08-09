@@ -14,6 +14,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -28,6 +34,10 @@
   @media (min-width: $tablet-width) {
     color: $title_black;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
   }
 }
 
@@ -44,11 +54,15 @@
     color: $title_black;
     text-align: left;
   }
-}
 
   @media (min-width: $desktop-width) {
-    .food__group {
-      display: flex;
+    grid-column: 1/2;
+  }
+}
+
+.food__group {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -60,11 +74,19 @@
     width: 244px;
     text-decoration: none;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .food__img {
   @media (min-width: $tablet-width) {
     order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
   }
 }
 
@@ -73,11 +95,5 @@
     width: 50%;
     background-image: url("../../img/index-img/tablet-green-cat.png");
     background-repeat: no-repeat;
-  }
-}
-
-.food__info {
-  @media (min-width: $desktop-width) {
-    width: 50%;
   }
 }

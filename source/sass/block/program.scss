@@ -5,11 +5,21 @@
 .program__item {
   background-color: $basic_grey;
   padding: 21px 33px 18px 22px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 20px;
+  }
 }
 
 .program__subtext {
   font-family: $font_basic;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .program__link {
@@ -19,19 +29,34 @@
   font-weight: 400;
   color: $title_black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .program__group {
   display: flex;
   align-items: center;
   padding: 30px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
 }
+
 
 .program__circle {
   width: 45px;
   height: 45px;
   background-color: $green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
 }
 
 /*--Title--*/
@@ -46,6 +71,10 @@
   text-transform: uppercase;
   color: $title_black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+  }
 }
 
 .program {
@@ -56,6 +85,11 @@
       width: 50px;
       height: 50px;
       background-image: url("../img/index-img/slim-catvector.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 16px;
+        left: -44px;
+      }
     }
   }
 
