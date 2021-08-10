@@ -14,12 +14,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-left: 90px;
   }
 }
 
@@ -83,6 +78,8 @@
 .food__img {
   @media (min-width: $tablet-width) {
     order: 4;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,6 +89,7 @@
 
 .food__background {
   @media (min-width: $desktop-width) {
+    display: none;
     width: 50%;
     background-image: url("../../img/index-img/tablet-green-cat.png");
     background-repeat: no-repeat;

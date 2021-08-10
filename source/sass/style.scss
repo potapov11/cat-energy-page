@@ -6,32 +6,34 @@
 @import "global/visually-hidden.scss";
 @import "global/wrapper.scss";
 @import "global/mixins.scss";
+@import "global/global.scss";
 
 //Блоки
-@import "block/button.scss";
-@import "block/desc.scss";
-@import "block/example.scss";
-@import "block/food.scss";
-@import "block/footer.scss";
-@import "block/header.scss";
-@import "block/nav-header.scss";
-@import "block/page-body.scss";
-@import "block/page.scss";
-@import "block/program.scss";
-@import "block/programs.scss";
-@import "block/title.scss";
+@import "blocks/button.scss";
+@import "blocks/desc.scss";
+@import "blocks/example.scss";
+@import "blocks/food.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/nav-header.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page.scss";
+@import "blocks/program.scss";
+@import "blocks/programs.scss";
+@import "blocks/title.scss";
+@import "blocks/slider.scss";
 
 
 //catalog
-@import "block/catalog.scss";
-@import "block/extra.scss";
-@import "block/products.scss";
-@import "block/show.scss";
+@import "blocks/catalog.scss";
+@import "blocks/extra.scss";
+@import "blocks/products.scss";
+@import "blocks/show.scss";
 
 //form
-@import "block/form-content.scss";
-@import "block/form-title.scss";
-@import "block/checkbox-field.scss";
-@import "block/contacts.scss";
-@import "block/text-field.scss";
-@import "block/form-list.scss"
+@import "blocks/form-content.scss";
+@import "blocks/form-title.scss";
+@import "blocks/checkbox-field.scss";
+@import "blocks/contacts.scss";
+@import "blocks/text-field.scss";
+@import "blocks/form-list.scss";
