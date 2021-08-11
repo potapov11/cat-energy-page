@@ -19,8 +19,6 @@
 }
 
 .footer__list {
-  @include list-reset;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -33,6 +31,7 @@
 .footer__info {
   background-color: $basic_grey;
   padding: 55px 30px 61px 30px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -53,4 +52,13 @@
   @media (min-width: $desktop-width) {
     display: flex;
   }
+}
+
+.footer__logo {
+  margin-bottom: 52px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
 }

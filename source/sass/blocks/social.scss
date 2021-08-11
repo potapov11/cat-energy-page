@@ -1,0 +1,14 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 130px;
+  margin: 0 auto 43px;
+}
+
+.social__item {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

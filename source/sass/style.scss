@@ -2,13 +2,13 @@
 @import "global/normalize.css";
 @import "global/vars.scss";
 @import "global/fonts.scss";
-@import "global/box-sizing.scss";
 @import "global/visually-hidden.scss";
 @import "global/wrapper.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
 
 //Блоки
+@import "blocks/social.scss";
 @import "blocks/button.scss";
 @import "blocks/desc.scss";
 @import "blocks/example.scss";
@@ -21,8 +21,6 @@
 @import "blocks/program.scss";
 @import "blocks/programs.scss";
 @import "blocks/title.scss";
-@import "blocks/slider.scss";
-
 
 //catalog
 @import "blocks/catalog.scss";
