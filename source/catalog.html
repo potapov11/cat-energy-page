@@ -37,7 +37,7 @@
       <!---Section Catalog--->
       <section class="catalog">
         <div class="wrapper">
-          <h2 class="catalog__title">Каталог продукции</h2>
+          <h2 class="catalog__title title__bold">Каталог продукции</h2>
           <ul class="catalog__list products">
             <li class="products__item card">
               <a class="products__img-link" href="#">
@@ -215,7 +215,11 @@
             </li>
 
             <li class="products__item show">
-              <span class="show__plus"></span> <!---Для плюса--->
+              <div class="show__plus">
+                <div class="show__line">
+                  <div class="show__other__line"></div>
+                </div>
+              </div> <!---Для плюса--->
               <h2 class="show__title">Показать еще 100500 товаров</h2>
               <p class="show__text">На самом деле вкусов гораздо больше!</p>
               <a class="button show__link" href="#">показать все</a>
@@ -265,21 +269,20 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="contacts">
-          <div class="footer__contacts invite">
-            <p class="invite__text">приглашаем к сотрудничеству дилеров!</p>
+          <div class="footer__contacts">
+            <p class="footer__invite-text">приглашаем к сотрудничеству дилеров!</p>
           </div>
-          <div class="footer__address address">
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="footer__address">
+            <p class="footer__address-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
         </div>
 
         <div class="footer__map">
-          <iframe class="iframe-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
-          <img src="img/index-img/footer-map-logo.png" alt="Лого-метка на карте" width="57" height="53" class="footer__map-logo">
+          <iframe class="footer__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada8790797727162726cdd6f75ed2b06b7e7738236d327045ff362fa2f2c45676&amp;source=constructor" width="320" height="362"></iframe>
         </div>
 
         <div class="footer__info">
-          <img src="img/index-img/footer-logo-text.svg" alt="текстовый логотип" width="128" height="24">
+          <img class="footer__logo" src="img/index-img/footer-logo-text.svg" alt="текстовый логотип" width="128" height="24">
           <ul class="footer__list social">
             <li class="social__item">
               <a class="social__link" href="https://vk.com">

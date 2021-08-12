@@ -1,8 +1,8 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  width: 130px;
-  margin: 0 auto 43px;
+  @include list-reset;
+  justify-content: center;
 }
 
 .social__item {

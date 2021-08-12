@@ -5,11 +5,35 @@
 .extra__title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .extra__subtitle {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra__img-text {
@@ -22,10 +46,33 @@
   font-family: $font_basic;
   font-size: 14px;
   line-height: 20px;
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .extra__subtext {
   font-family: $font_basic;
   font-size: 14px;
   line-height: 14px;
+  grid-column: 2/3;
+  justify-self: flex-end;
+}
+
+.extra__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 31px;
+}
+
+.extra__button {
+  grid-column: 1/3;
 }
