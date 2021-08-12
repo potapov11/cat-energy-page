@@ -1,35 +1,37 @@
 // Начните писать стили здесь
 @import "global/normalize.css";
+@import "global/vars.scss";
 @import "global/fonts.scss";
-@import "global/box-sizing.scss";
 @import "global/visually-hidden.scss";
 @import "global/wrapper.scss";
-@import "global/vars.scss";
 @import "global/mixins.scss";
+@import "global/global.scss";
 
 //Блоки
-@import "block/button.scss";
-@import "block/desc.scss";
-@import "block/example.scss";
-@import "block/food.scss";
-@import "block/footer.scss";
-@import "block/header.scss";
-@import "block/nav-header.scss";
-@import "block/page-body.scss";
-@import "block/page.scss";
-@import "block/program.scss";
-@import "block/title.scss";
-
+@import "blocks/social.scss";
+@import "blocks/button.scss";
+@import "blocks/desc.scss";
+@import "blocks/example.scss";
+@import "blocks/food.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/nav-header.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page.scss";
+@import "blocks/program.scss";
+@import "blocks/programs.scss";
+@import "blocks/title.scss";
 
 //catalog
-@import "block-2/catalog.scss";
-@import "block-2/extra.scss";
-@import "block-2/products.scss";
-@import "block-2/show.scsblock-3";
+@import "blocks/catalog.scss";
+@import "blocks/extra.scss";
+@import "blocks/products.scss";
+@import "blocks/show.scss";
+
 //form
-@import "block-3/form-content.scss";
-@import "block-3/form-title.scss";
-@import "block-3/checkbox-field.scss";
-@import "block-3/contacts.scss";
-@import "block-3/text-field.scss";
-@import "block-3/form-list.scss"
+@import "blocks/form-content.scss";
+@import "blocks/form-title.scss";
+@import "blocks/checkbox-field.scss";
+@import "blocks/contacts.scss";
+@import "blocks/text-field.scss";
+@import "blocks/form-list.scss";

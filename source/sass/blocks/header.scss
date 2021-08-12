@@ -1,0 +1,16 @@
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.header {
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
+}
