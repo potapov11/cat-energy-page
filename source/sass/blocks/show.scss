@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+  }
 }
 
 .show__title {
@@ -37,6 +41,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .show__line {
@@ -49,5 +57,5 @@
   height: 2px;
   width: 30px;
   background-color: #d3d3d3;
-  transform: rotate(90deg)
+  transform: rotate(90deg);
 }

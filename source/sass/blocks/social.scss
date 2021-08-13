@@ -1,7 +1,9 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+
   @include list-reset;
+
   justify-content: center;
 }
 

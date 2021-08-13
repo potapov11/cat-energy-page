@@ -1,6 +1,15 @@
 .contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    padding: 60px 50px 50px 60px;
+    top: 100px;
+    left: 240px;
+    background-color: $basic_white;
+  }
 }
 
 .contacts__title {
