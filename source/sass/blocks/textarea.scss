@@ -1,0 +1,36 @@
+.textarea {
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.textarea__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.textarea__field {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.textarea__field::placeholder {
+  font-size: 16px;
+  line-height: 18px;
+  opacity: 1;
+  color: $special_dark-grey;
+  font-family: $font_custom;
+}

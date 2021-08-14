@@ -1,7 +1,9 @@
-.contacts {
+.contacts .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 60px;
+  grid-column-gap: 20px;
+  grid-column: 1/-1;
+  padding: 28px 20px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -12,15 +14,6 @@
   }
 }
 
-.contacts__title {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $title_black;
-}
-
-.contacts-input__control::placeholder {
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_dark-grey;
+.contacts__footer-form {
+  background-color: $basic_grey;
 }

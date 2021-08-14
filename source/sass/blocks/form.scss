@@ -1,0 +1,12 @@
+.form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__button {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+}
