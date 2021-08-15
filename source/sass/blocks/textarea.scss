@@ -17,6 +17,9 @@
 
 .textarea__field {
   width: 100%;
+  padding: 9px 15px 0 12px;
+  border: 1px solid $form_border;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -33,4 +36,5 @@
   opacity: 1;
   color: $special_dark-grey;
   font-family: $font_custom;
+  text-transform: uppercase;
 }

@@ -22,7 +22,7 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Каталог продукции</a>
+              <a class="nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="">Подбор программы</a>
@@ -33,25 +33,25 @@
     </header>
 
     <main class="form-content">
-      <div class="wrapper">
+      <div class="wrapper wrapper--form-content">
         <h2 class="form-content__title">Подбор программы</h2>
         <p class="form-content__subtext">Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
           <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
             <!----Text-->
-              <fieldset class="form__group form__namse">
+              <fieldset class="form__group form__name">
                 <legend class="visually-hidden"></legend>
                 <ul class="form__list form__name-list">
                   <li class="form__field text-field">
-                    <label class="text-field__label" for="name">ИМЯ:*</label>
+                    <label class="text-field__label text-field__label--name" for="name">Имя:*</label>
                     <input class="text-field__input" type="text" id="name" placeholder="Барсик">
                   </li>
                   <li class="form__field text-field">
-                    <label class="text-field__label" for="weight">Вес (кг):*</label>
+                    <label class="text-field__label text-field__label--weight" for="weight">Вес (кг):*</label>
                     <input class="text-field__input" type="text" id="weight" placeholder="7">
                   </li>
                   <li class="form__field text-field">
-                    <label class="text-field__label" for="age">Возраст (лет):</label>
+                    <label class="text-field__label text-field__label--age" for="age">Возраст (лет):</label>
                     <input class="text-field__input" type="text" id="age" placeholder="7">
                   </li>
                 </ul>
@@ -81,7 +81,7 @@
                 <legend class="contacts__title form__title">Контактные данные (владельца кота)</legend>
                 <ul class="form__list contacts__form">
                   <li class="contacts__item">
-                    <label class="contacts-label__control" for="mail">E-mail:*</label>
+                    <label class="contacts-label__control contacts-label__control--email" for="mail">E-mail:*</label>
                     <input class="contacts-input__control" type="email" id="mail" placeholder="kuklachev@gmail.com">
                   </li>
                   <li class="contacts__item">
@@ -100,7 +100,7 @@
               </fieldset>
 
               <!---More--->
-              <fieldset class="form__group checkbox-field">
+              <fieldset class="form__group form__group--checkbox">
                 <legend class="checkbox__title form__title">Дополнительно</legend>
                 <ul class="checkbox-list checkbox">
                   <li class="checkbox__item">

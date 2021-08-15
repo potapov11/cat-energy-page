@@ -11,14 +11,36 @@
   }
 }
 
+.contacts-input__control {
+  text-transform: uppercase;
+  padding: 14px;
+  width: 100%;
+}
+
+.contacts-label__control--email {
+  width: 70px;
+}
+
+.contacts-label__control {
+  text-transform: uppercase;
+}
+
 .contacts-input__control::placeholder {
+  font-family: $font_custom;
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
+  text-transform: uppercase;
 }
 
 .contacts__item {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__group-form {

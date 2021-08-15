@@ -1,9 +1,11 @@
 .wrapper {
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 540px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    max-width: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,7 +13,7 @@
   }
 }
 
-.form-content .wrapper {
+.wrapper--form-content {
   @media (min-width: $tablet-width) {
     padding: 0 70px;
   }

@@ -1,6 +1,14 @@
 .catalog {
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 72px;
+    margin-bottom: 0;
   }
 }
 
@@ -13,12 +21,14 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 0;
     margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 0;
     margin-bottom: 82px;
   }
 }
