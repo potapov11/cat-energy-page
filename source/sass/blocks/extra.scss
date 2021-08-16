@@ -67,7 +67,6 @@
   display: flex;
   flex-direction: column;
   height: 289px;
-  padding: 21px 126px;
   text-align: center;
   background-image: url("../../img/Catalog-img/cat-bg-green.png");
   background-repeat: no-repeat;
@@ -88,19 +87,19 @@
 }
 
 .extra__img-text {
-  margin-top: auto;
+  margin: 180px auto;
   font-family: $font_basic;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+  width: 170px;
 
   @media (min-width: $tablet-width) {
+    width: 160px;
     grid-column: 2/3;
     margin: 0;
     align-self: center;
     text-align: left;
-    padding-left: 107px;
-    padding-right: 8px;
   }
 
   @media (min-width: $desktop-width) {

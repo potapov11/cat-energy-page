@@ -9,6 +9,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .contacts-input__control {
@@ -38,14 +42,20 @@
   display: flex;
   align-items: center;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.contacts__item--tel {
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 
 .contacts__group-form {
-  margin-bottom: 23px;
-
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }
