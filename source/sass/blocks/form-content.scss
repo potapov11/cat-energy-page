@@ -2,6 +2,10 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .form-content__title {

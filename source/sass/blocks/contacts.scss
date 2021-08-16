@@ -18,12 +18,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;
-    z-index: 1;
-    padding: 66px 89px 59px 76px;
-    margin-top: 96px;
-    margin-left: 50px;
-    margin-right: 500px;
-    margin-bottom: 93px;
+    z-index: 2;
     background-color: $basic_white;
   }
 }

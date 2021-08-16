@@ -1,4 +1,11 @@
-.checkbox-field {
+.form__group--checkbox {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__group--checkbox {
   color: $title_black;
 
   @media (min-width: $tablet-width) {
@@ -13,6 +20,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
     grid-column: 1/-1;
   }
 }
