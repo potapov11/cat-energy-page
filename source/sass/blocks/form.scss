@@ -6,8 +6,34 @@
   }
 }
 
+.form__radio {
+  color: $special_dark-grey-2;
+  margin-bottom: 14px;
+}
+
+.form__group--contacts__list {
+  @include list-reset;
+}
+
 .form__button {
   width: 100%;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 45%;
+    margin-right: 20px;
+  }
+}
+
+.form__name {
+  margin-bottom: 49px;
+}
+
+.form__text {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 45%;
+  }
 }

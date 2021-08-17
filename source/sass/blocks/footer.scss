@@ -4,10 +4,14 @@
   }
 }
 
+.footer--form {
+  background-color: $basic_grey;
+}
+
 .footer__invite-text {
   font-family: $font_custom;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $hard-black;
   text-transform: uppercase;
 }
@@ -93,4 +97,12 @@
 .footer__copyright {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__contacts--margin {
+  margin-right: 5px;
+
+  @media (min-width:$desktop-width) {
+    margin-right: 72px;
+  }
 }

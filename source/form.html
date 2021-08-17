@@ -40,7 +40,7 @@
           <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
             <!----Text-->
               <fieldset class="form__group form__name">
-                <legend class="visually-hidden"></legend>
+                <legend class="visually-hidden">Задает параметры</legend>
                 <ul class="form__list form__name-list">
                   <li class="form__field text-field">
                     <label class="text-field__label text-field__label--name" for="name">Имя:*</label>
@@ -58,8 +58,8 @@
               </fieldset>
 
               <!---radio--->
-              <fieldset class="form__group form__radio-group">
-                <legend class="visually-hidden"></legend>
+              <fieldset class="form__group form__group--radio">
+                <legend class="visually-hidden">Выбирает варианты программы</legend>
                 <ul class="form__list radio-list">
                   <li class="form__radio radio-input">
                     <input class="radio-input__control" type="radio" name="choice" id="weight-loss" value="weight-loss">
@@ -77,14 +77,14 @@
               </fieldset>
 
               <!---Contacts--->
-              <fieldset class="form__group contacts__group-form">
-                <legend class="contacts__title form__title">Контактные данные (владельца кота)</legend>
-                <ul class="form__list contacts__form">
+              <fieldset class="form__group form__group--contacts">
+                <legend class="form__group--contacts__title form__title">Контактные данные (владельца кота)</legend>
+                <ul class="form__group--contacts__list contacts-list contacts">
                   <li class="contacts__item">
                     <label class="contacts-label__control contacts-label__control--email" for="mail">E-mail:*</label>
                     <input class="contacts-input__control" type="email" id="mail" placeholder="kuklachev@gmail.com">
                   </li>
-                  <li class="contacts__item contacts__item--tel>
+                  <li class="contacts__item contacts__item--tel">
                     <label class="contacts-label__control" for="tel">Телефон:*</label>
                     <input class="contacts-input__control" type="tel" id="tel" placeholder="8 (960) 900-60-90">
                   </li>
@@ -101,30 +101,30 @@
 
               <!---More--->
               <fieldset class="form__group form__group--checkbox">
-                <legend class="checkbox__title form__title">Дополнительно</legend>
-                <ul class="checkbox-list checkbox">
-                  <li class="checkbox__item">
-                    <label class="checkbox-label__control" for="checkbox-sweetener">
-                      <input class="checkbox-input__control" type="checkbox" name="sweetener" id="checkbox-sweetener" value="sweetener"
+                <legend class="form__group__checkbox__title form__title">Дополнительно</legend>
+                <ul class="form__group__checkbox-list checkbox-list">
+                  <li class="checkbox__list-item">
+                    <label class="checkbox__list-label" for="checkbox-sweetener">
+                      <input class="checkbox__list-input" type="checkbox" name="sweetener" id="checkbox-sweetener" value="sweetener"
                         checked>
                       Сахарозаменитель
                     </label>
                   </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox-label__control" for="checkbox-water">
-                      <input class="checkbox-input__control" type="checkbox" name="water" id="checkbox-water" value="water">
+                  <li class="checkbox__list-item">
+                    <label class="checkbox__list-label" for="checkbox-water">
+                      <input class="checkbox__list-input" type="checkbox" name="water" id="checkbox-water" value="water">
                       Питьевая вода
                     </label>
                   </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox-label__control" for="checkbox-milk">
-                      <input class="checkbox-input__control" type="checkbox" name="milk" id="checkbox-milk" value="milk">
+                  <li class="checkbox__list-item">
+                    <label class="checkbox__list-label" for="checkbox-milk">
+                      <input class="checkbox__list-input" type="checkbox" name="milk" id="checkbox-milk" value="milk">
                       Молоко
                     </label>
                   </li>
-                  <li class="checkbox__item">
-                    <label class="checkbox-label__control" for="checkbox-vitamins">
-                      <input class="checkbox-input__control" type="checkbox" name="vitamins" id="checkbox-vitamins" value="vitamins">
+                  <li class="checkbox__list-item">
+                    <label class="checkbox__list-label" for="checkbox-vitamins">
+                      <input class="checkbox__list-input" type="checkbox" name="vitamins" id="checkbox-vitamins" value="vitamins">
                       Витамины
                     </label>
                   </li>
@@ -137,10 +137,10 @@
     </main>
 
     <!---Footer--->
-    <footer class="footer">
-      <div class="contacts contacts__footer-form">
-        <div class="wrapper">
-          <div class="footer__contacts">
+    <footer class="footer footer--form">
+      <div class="wrapper wrapper--contacts">
+        <div class="contacts contacts__footer-form">
+          <div class="footer__contacts footer__contacts--margin">
             <p class="footer__invite-text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
           </div>
           <div class="footer__address">

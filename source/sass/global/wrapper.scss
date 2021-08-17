@@ -18,3 +18,15 @@
     padding: 0 70px;
   }
 }
+
+.wrapper--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    z-index: 2;
+    top: 100px;
+    left: 240px;
+    background-color: $basic_white;
+  }
+}

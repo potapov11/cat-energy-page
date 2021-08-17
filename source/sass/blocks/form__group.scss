@@ -4,11 +4,72 @@
   padding: 0;
 }
 
-.form__name {
-  margin-bottom: 49px;
+.form__group--checkbox {
+  color: $title_black;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-column-gap: 37px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    grid-column-gap: 80px;
+    grid-column: 1/-1;
+  }
 }
 
-.form__radio--group {
+.form__group__checkbox__title {
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.form__group__checkbox-list {
+  @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    margin-bottom: 61px;
+  }
+}
+
+.form__group--radio {
   margin-bottom: 48px;
+}
+
+.form__group--contacts__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $title_black;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
