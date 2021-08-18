@@ -1,4 +1,4 @@
-.contacts {
+.footer__group {
   display: flex;
   justify-content: space-between;
   padding: 10px 5px;
@@ -15,7 +15,7 @@
   }
 }
 
-.contacts__footer-form {
+.footer__contacts-form {
   background-color: $basic_grey;
 
   @media (min-width: $desktop-width) {

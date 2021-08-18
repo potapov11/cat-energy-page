@@ -15,10 +15,22 @@
   @include list-reset;
 }
 
+.form__list {
+  margin: 0;
+  padding: 0;
+  @include list-reset;
+}
+
 .form__button {
   width: 100%;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 45%;
+    margin-right: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
@@ -32,6 +44,11 @@
 }
 
 .form__text {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 45%;
+  }
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 45%;

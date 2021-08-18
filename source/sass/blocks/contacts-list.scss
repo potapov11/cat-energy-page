@@ -1,18 +1,18 @@
-.contacts-input__control {
+.contacts-list__input {
   text-transform: uppercase;
   padding: 14px;
   width: 100%;
 }
 
-.contacts-label__control--email {
+.contacts-list__label--email {
   width: 70px;
 }
 
-.contacts-label__control {
+.contacts-list__label {
   text-transform: uppercase;
 }
 
-.contacts-input__control::placeholder {
+.contacts-list__input::placeholder {
   font-family: $font_custom;
   font-size: 16px;
   line-height: 18px;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-.contacts__item {
+.contacts-list__item {
   margin-bottom: 14px;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
   }
 }
 
-.contacts__item--tel {
+.contacts-list__item--tel {
   margin-bottom: 0;
 
   @media (min-width: $desktop-width) {

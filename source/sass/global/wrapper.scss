@@ -30,3 +30,12 @@
     background-color: $basic_white;
   }
 }
+
+.wrapper--program {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+  }
+}
