@@ -1,6 +1,36 @@
+.catalog {
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+    margin-bottom: 0;
+  }
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 0;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 0;
+    margin-bottom: 82px;
+  }
 }
 
 .catalog__list {

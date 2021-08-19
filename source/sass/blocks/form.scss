@@ -1,0 +1,56 @@
+.form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+.form__radio {
+  color: $special_dark-grey-2;
+  margin-bottom: 14px;
+}
+
+.form__group--contacts__list {
+  @include list-reset;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  @include list-reset;
+}
+
+.form__button {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 45%;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 45%;
+    margin-right: 20px;
+  }
+}
+
+.form__name {
+  margin-bottom: 49px;
+}
+
+.form__text {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 45%;
+  }
+}

@@ -1,0 +1,8 @@
+.form-radio {
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+  }
+}

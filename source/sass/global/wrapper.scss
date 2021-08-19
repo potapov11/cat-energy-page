@@ -1,12 +1,41 @@
 .wrapper {
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 540px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    max-width: none;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1280px;
+  }
+}
+
+.wrapper--form-content {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+}
+
+.wrapper--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    padding: 0;
+    z-index: 2;
+    top: 100px;
+    left: 240px;
+    background-color: $basic_white;
+  }
+}
+
+.wrapper--program {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
   }
 }

@@ -42,4 +42,17 @@
   font-family: $font_basic;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.desc__row {
+  display: flex;
+}
+
+.desc__value {
+  margin-left: auto;
 }

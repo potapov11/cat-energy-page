@@ -1,0 +1,54 @@
+.contacts-list__input {
+  text-transform: uppercase;
+  padding: 14px;
+  width: 100%;
+}
+
+.contacts-list__label--email {
+  width: 70px;
+}
+
+.contacts-list__label {
+  text-transform: uppercase;
+}
+
+.contacts-list__input::placeholder {
+  font-family: $font_custom;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.contacts-list__item {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.contacts-list__item--tel {
+  margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.contacts__group-form {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.contacts__form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 80px;
+  }
+}

@@ -1,7 +1,7 @@
 .form-content {
-  font-size: 16px;
-  line-height: 18px;
-  color: $special_dark-grey;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .form-content__title {
@@ -9,8 +9,29 @@
   line-height: 36px;
   font-weight: 400;
   color: $title_black;
+  margin: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 46px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    font-weight: 400;
+  }
 }
 
 .form-content__subtext {
   color: $title_black;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }

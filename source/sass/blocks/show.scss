@@ -1,6 +1,19 @@
+.show {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+  }
+}
+
 .show__title {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  margin-bottom: auto;
 }
 
 .show__link {
@@ -11,7 +24,38 @@
 }
 
 .show__text {
+  margin: 0;
   font-family: $font_basic;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.show__plus {
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
+}
+
+.show__line {
+  height: 2px;
+  width: 30px;
+  background-color: #d3d3d3;
+}
+
+.show__other__line {
+  height: 2px;
+  width: 30px;
+  background-color: #d3d3d3;
+  transform: rotate(90deg);
 }
