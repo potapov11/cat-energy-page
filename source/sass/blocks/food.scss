@@ -35,7 +35,7 @@
   color: $basic_white;
 
   @media (min-width: $tablet-width) {
-    margin: 62px 0 41px 0;
+    margin: 0 0 41px 0;
     padding: 0;
     color: $title_black;
     text-align: left;
@@ -46,7 +46,7 @@
     grid-column: 1/2;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 111px;
+    margin-top: 0;
     margin-bottom: 40px;
   }
 }
