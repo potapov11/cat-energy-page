@@ -1,0 +1,14 @@
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.slider__button-text {
+  border: none;
+  font-family: $font_custom;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,5 +1,10 @@
 .program {
   padding-top: 20px;
+  padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
 }
 
 .program-group {
@@ -16,6 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
     margin-bottom: 20px;
@@ -23,21 +29,32 @@
 }
 
 .program__subtext {
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $index_grey;
   font-family: $font_basic;
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .program__link {
-  font-family: $font_basic;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $title_black;
   text-decoration: none;
+  font-family: $font_custom;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -54,26 +71,13 @@
   }
 }
 
-
-.program__circle {
-  width: 45px;
-  height: 45px;
-  background-color: $green;
-  border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-column: 2/3;
-    grid-row: 1/4;
-  }
-}
-
 /*--Title--*/
 
 .program__title {
   position: relative;
   margin: 0;
   margin-bottom: 22px;
+  padding-left: 60px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -89,26 +93,26 @@
 .program {
   &--slim .pr__title {
     &::before {
-      top: 16px;
-      left: -44px;
+      top: -5px;
+      left: -6px;
       width: 50px;
       height: 50px;
-      background-image: url("../img/index-img/slim-catvector.svg");
+      background-image: url("../img/index-img/cat__slim__svg.svg");
 
       @media (min-width: $tablet-width) {
-        top: 16px;
-        left: -44px;
+        top: -5px;
+        left: -6px;
       }
     }
   }
 
   &--pro .pr__title {
     &::before {
-      top: 30px;
-      left: -57px;
+      top: -7px;
+      left: -17px;
       height: 52px;
       width: 70px;
-      background-image: url("../../img/index-img/pro-catvector.svg");
+      background-image: url("../../img/index-img/cat__fat__svg.svg");
     }
   }
 }
@@ -120,4 +124,36 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+.program__button {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-image: url("../../img/index-img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 185px;
+    left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 186px;
+  }
+}
+
+.program__button--pro {
+  @media (min-width: $tablet-width) {
+  position: absolute;
+  top: 166px;
+  left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+  top: 191px;
+}
 }
