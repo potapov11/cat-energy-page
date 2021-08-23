@@ -1,6 +1,7 @@
 .nav__list {
   @include list-reset;
   display: none;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -34,6 +35,11 @@
     line-height: 24px;
     font-weight: 400;
   }
+}
+
+.nav__link--current {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $green;
 }
 
 .nav__item {
@@ -92,24 +98,3 @@
 .nav__logo-img-text {
   margin-right: auto;
 }
-
-// .nav__list--active + .nav__button {
-//   box-shadow: none;
-//   position: absolute;
-//   top: 31px;
-//   right: 18px;
-//   transform: rotate(45deg);
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 1px;
-//     right: 0;
-//     width: 24px;
-//     height: 1.5px;
-//     background-color: $title_black;
-//     transform: rotate(90deg);
-//   }
-// }
-
-// .nav__list + .nav__list--no-js

@@ -59,10 +59,10 @@
   text-align: center;
   border: 2px solid $special-grey;
   border-radius: 5px;
-}
 
-.example__item--days {
-  margin-left: auto;
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .example__item-text {
@@ -75,7 +75,7 @@
   text-align: center;
   width: 66%;
   bottom: -14px;
-  left: 22px;
+  left: 18%;
   background-color: white;
 }
 
@@ -91,12 +91,20 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
+    justify-self: end;
+    font-size: 20px;
+
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 4/5;
     grid-column: 1/2;
   }
+}
+
+.example__subtext-inner {
+  display: block;
+  padding-left: 84px;
 }
 
 .example__inner {
