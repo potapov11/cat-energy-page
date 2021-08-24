@@ -126,4 +126,8 @@
   font-family: $font_basic;
   font-size: 16px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 }

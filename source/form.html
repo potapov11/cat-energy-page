@@ -12,10 +12,10 @@
     <!---Header--->
     <header class="header">
       <div class="wrapper">
-        <nav class="header__nav nav">
-          <a class="nav__logo" href="#">
-            <img src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
-            <img src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
+        <nav class="header__nav nav header__nav--closed header__nav-nojs"> <!----header__nav--active--->
+          <a class="nav__logo nav__logo-form" href="#">
+            <img class="nav__logo-img nav__logo-img-cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+            <img class="nav__logo-img nav__logo-img-text "src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
           </a>
           <ul class="nav__list">
             <li class="nav__item">
@@ -28,6 +28,7 @@
               <a class="nav__link nav__link--current" href="">Подбор программы</a>
             </li>
           </ul>
+          <button class="nav__button" type="button"><span class=visually-hidden>Меню</span></button>
         </nav>
       </div>
     </header>
@@ -129,7 +130,7 @@
                     </label>
                   </li>
                 </ul>
-                <button class="button form__button" type="submit">Отправить заявку</button>
+                <button class="button form__button" type="submit"><span>Отправить заявку</span></button>
                 <p class="form__text">* — Обязательные поля</p>
               </fieldset>
           </form>
@@ -189,5 +190,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.header__nav');
+      var navToggle = document.querySelector('.nav__button');
+
+      navMain.classList.remove('header__nav-nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('header__nav--closed')) {
+          navMain.classList.remove('header__nav--closed');
+          navMain.classList.add('header__nav--active');
+        } else {
+          navMain.classList.add('header__nav--closed');
+          navMain.classList.remove('header__nav--active');
+        }
+      });
+    </script>
   </body>
 </html>

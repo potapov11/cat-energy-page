@@ -142,7 +142,53 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 186px;
+    top: 199px;
+  }
+}
+
+// .program__button:hover {
+//   display: inline-block;
+//   width: 28px;
+//   height: 10px;
+//   background-image: url("../../img/index-img/arrow-big.svg");
+
+//   @media (min-width: $tablet-width) {
+//     position: absolute;
+//     bottom: 18px;
+//     left: 100px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     top: 199px;
+//   }
+// }
+
+.program__button--slim {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 18px;
+    left: 103px;
+    }
+
+    @media (min-width: $desktop-width) {
+    top: 192px;
+  }
+}
+
+.program__button--slim:hover {
+  display: inline-block;
+  width: 28px;
+  height: 10px;
+  background-image: url("../../img/index-img/arrow-big.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 18px;
+    left: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 192px;
   }
 }
 
@@ -154,6 +200,28 @@
   }
 
   @media (min-width: $desktop-width) {
-  top: 191px;
+  top: 199px;
 }
+}
+
+.program__button--pro:hover {
+  display: inline-block;
+  width: 28px;
+  height: 10px;
+  background-image: url("../../img/index-img/arrow-big.svg");
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 18px;
+    left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 199px;
+  }
+}
+
+.program__link:active,
+.program__button:active {
+  opacity: .3;
 }

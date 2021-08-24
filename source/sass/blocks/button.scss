@@ -11,3 +11,11 @@
   padding: 10px;
   text-transform: uppercase;
 }
+
+.button:hover {
+  background-color: $basic_green-2;
+}
+
+.button:active span{
+  opacity: .3;
+}
