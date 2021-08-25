@@ -113,8 +113,13 @@
 }
 
 .example__subtext-inner {
-  display: block;
-  padding-left: 84px;
+  display: inline-block;
+  padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 84px;
+  }
 }
 
 .example__inner {

@@ -11,3 +11,46 @@
   }
 }
 }
+
+/*checbox-style*/
+
+.checkbox__list-input {
+  display: none;
+}
+
+.checkbox__list-span {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 41px;
+}
+
+.checkbox__list-span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special_grey;
+}
+
+.checkbox__list-span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/form-img/checbox_v.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+.checkbox__list-input:checked + .checkbox__list-span::after {
+  opacity: 1;
+}
+
+

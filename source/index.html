@@ -37,7 +37,7 @@
       <section class="food">
         <div class="wrapper">
           <div class="food__info">
-            <h2 class="food__title title__bold">Функциональное<br> питание для котов</h2>
+            <h2 class="title__bold--food food__title">Функциональное<br> питание для котов</h2>
             <p class="food__text">Занялся собой? Займись котом!</p>
             <img class="food__img" width="280" height="270" src="img/index-img/food-bg-main.png" alt="Изображение питания для котов">
             <a class="food__button button" href="form.html"><span>Подобрать программу</a>
@@ -190,6 +190,7 @@
     <script>
       var navMain = document.querySelector('.header__nav');
       var navToggle = document.querySelector('.nav__button');
+      var navList = document.querySelector('.nav__list');
 
       navMain.classList.remove('header__nav-nojs');
 
@@ -197,6 +198,7 @@
         if (navMain.classList.contains('header__nav--closed')) {
           navMain.classList.remove('header__nav--closed');
           navMain.classList.add('header__nav--active');
+          navList.classList.add('nav__list--active');
         } else {
           navMain.classList.add('header__nav--closed');
           navMain.classList.remove('header__nav--active');

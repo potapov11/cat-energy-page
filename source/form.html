@@ -63,16 +63,22 @@
                 <legend class="visually-hidden">Выбирает варианты программы</legend>
                 <ul class="form__list radio-list">
                   <li class="form__radio form-radio">
-                    <input class="form-radio-input" type="radio" name="choice" id="weight-loss" value="weight-loss">
-                    <label class="form-radio-label" for="weight-loss">Похудение</label>
+                    <label class="form-radio-label" for="weight-loss">
+                      <input class="form-radio-input" type="radio" name="choice" id="weight-loss" value="weight-loss">
+                      <span class="form-radio-span">Похудение</span>
+                    </label>
                   </li>
                   <li class="form__radio form-radio">
-                    <input class="form-radio-input" type="radio" name="choice" id="more-mass" value="more-mass">
-                    <label class="form-radio-label" for="more-mass">Набор массы</label>
+                    <label class="form-radio-label" for="more-mass">
+                      <input class="form-radio-input" type="radio" name="choice" id="more-mass" value="more-mass">
+                      <span class="form-radio-span">Набор массы</span>
+                    </label>
                   </li>
                   <li class="form__radio form-radio">
-                    <input class="form-radio-input" type="radio" name="choice" id="advice" value="advice">
-                    <label class="form-radio-label" for="advice">Не знаю (Нужен ваш совет)</label>
+                    <label class="form-radio-label" for="advice">
+                      <input class="form-radio-input" type="radio" name="choice" id="advice" value="advice">
+                      <span class="form-radio-span">Не знаю (Нужен ваш совет)</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -108,25 +114,25 @@
                     <label class="checkbox__list-label" for="checkbox-sweetener">
                       <input class="checkbox__list-input" type="checkbox" name="sweetener" id="checkbox-sweetener" value="sweetener"
                         checked>
-                      Сахарозаменитель
+                      <span class="checkbox__list-span">Сахарозаменитель</span>
                     </label>
                   </li>
                   <li class="checkbox__list-item">
                     <label class="checkbox__list-label" for="checkbox-water">
                       <input class="checkbox__list-input" type="checkbox" name="water" id="checkbox-water" value="water">
-                      Питьевая вода
+                      <span class="checkbox__list-span">Питьевая вода</span>
                     </label>
                   </li>
                   <li class="checkbox__list-item">
                     <label class="checkbox__list-label" for="checkbox-milk">
                       <input class="checkbox__list-input" type="checkbox" name="milk" id="checkbox-milk" value="milk">
-                      Молоко
+                      <span class="checkbox__list-span">Молоко</span>
                     </label>
                   </li>
                   <li class="checkbox__list-item">
                     <label class="checkbox__list-label" for="checkbox-vitamins">
                       <input class="checkbox__list-input" type="checkbox" name="vitamins" id="checkbox-vitamins" value="vitamins">
-                      Витамины
+                      <span class="checkbox__list-span">Витамины</span>
                     </label>
                   </li>
                 </ul>
@@ -194,6 +200,7 @@
     <script>
       var navMain = document.querySelector('.header__nav');
       var navToggle = document.querySelector('.nav__button');
+      var navList = document.querySelector('.nav__list');
 
       navMain.classList.remove('header__nav-nojs');
 
@@ -201,6 +208,7 @@
         if (navMain.classList.contains('header__nav--closed')) {
           navMain.classList.remove('header__nav--closed');
           navMain.classList.add('header__nav--active');
+          navList.classList.add('nav__list--active');
         } else {
           navMain.classList.add('header__nav--closed');
           navMain.classList.remove('header__nav--active');
