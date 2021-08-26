@@ -3,13 +3,11 @@
 
   &:last-child {
     margin-bottom: 41px;
-  }
 
-  &:last-child {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
-}
 }
 
 /*checbox-style*/
@@ -52,5 +50,3 @@
 .checkbox__list-input:checked + .checkbox__list-span::after {
   opacity: 1;
 }
-
-

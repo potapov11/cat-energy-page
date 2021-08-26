@@ -103,17 +103,17 @@
 .footer__logo {
   margin-bottom: 52px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
 .footer__logo:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .footer__logo:active {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .footer__copyright {
@@ -124,7 +124,7 @@
 .footer__contacts--margin {
   margin-right: 5px;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 72px;
   }
 }
@@ -141,7 +141,7 @@
 }
 
 .footer__logo-text:active {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .footer__bottom-img:hover path {
@@ -149,5 +149,5 @@
 }
 
 .footer__bottom-img:active path {
-  opacity: .3;
+  opacity: 0.3;
 }
