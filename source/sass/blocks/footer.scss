@@ -108,6 +108,14 @@
   }
 }
 
+.footer__logo:hover {
+  opacity: .8;
+}
+
+.footer__logo:active {
+  opacity: .6;
+}
+
 .footer__copyright {
   display: flex;
   justify-content: space-between;
@@ -130,4 +138,16 @@
   @media (min-width: $tablet-width) {
     margin-right: 10px;
   }
+}
+
+.footer__logo-text:active {
+  opacity: .3;
+}
+
+.footer__bottom-img:hover path {
+  fill: $green;
+}
+
+.footer__bottom-img:active path {
+  opacity: .3;
 }
