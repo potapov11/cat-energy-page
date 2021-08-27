@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: flex;
+    position: static;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 30px;
+  }
+}
+
+.logo__img--cat {
+  margin-right: auto;
+}
+
+.logo__img--text {
+  margin-right: auto;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
+
+.logo__img:active {
+  opacity: 0.6;
+}

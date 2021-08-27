@@ -36,31 +36,19 @@
     line-height: 24px;
     font-weight: 400;
   }
-}
 
-.nav__link:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.nav__link:active {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__link--index {
   @media (min-width: $desktop-width) {
     color: $basic_white;
-  }
-}
-
-.nav__link--index:hover {
-  @media (min-width: $desktop-width) {
-    opacity: 0.6;
-  }
-}
-
-.nav__link--index:active {
-  @media (min-width: $desktop-width) {
-    opacity: 0.3;
   }
 }
 
@@ -86,12 +74,28 @@
 }
 
 .nav__button {
+  width: 35px;
+  height: 35px;
   border: none;
+  background-color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__button::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 55px;
   width: 24px;
-  height: 1.5px;
-  margin-bottom: 12px;
-  background-color: $title_black;
-  box-shadow: 0 8px 0 0, 0 16px 0 0;
+  height: 19px;
+  background-image:url("../../img/index-img/logo_line_mobile.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -100,50 +104,31 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
-
-.nav__logo {
-  display: flex;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    display: flex;
-    position: static;
-    z-index: 1;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 30px;
-  }
-}
-
-.nav__logo-img-cat {
-  margin-right: auto;
-}
-
-.nav__logo-img-text {
-  margin-right: auto;
-}
-
-.nav__logo-img:hover {
-  opacity: 0.8;
-}
-
-.nav__logo-img:active {
-  opacity: 0.6;
 }
 
 .nav__list--active .nav__item {
   padding-bottom: 18px;
   padding-top: 18px;
   border-bottom: 1px solid $form_border;
+  border-top: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
-.header__nav-nojs .nav__item {
+.nav__list--active .nav__item:nth-child(2) {
+  border-top: none;
+}
+
+.nav__item {
   padding-bottom: 18px;
   padding-top: 18px;
   border-bottom: 1px solid $form_border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .nav__list--active .nav__item:last-child {

@@ -29,8 +29,7 @@
 }
 
 .program__subtext {
-  margin: 0;
-  padding-bottom: 23px;
+  margin-bottom: 23px;
   border-bottom: 1px solid $index_grey;
   font-family: $font_basic;
   color: $special_dark-grey;
@@ -55,6 +54,7 @@
   color: $title_black;
   text-decoration: none;
   font-family: $font_custom;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
