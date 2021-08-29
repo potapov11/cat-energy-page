@@ -1,16 +1,10 @@
 .nav__list {
   @include list-reset;
-  display: none;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-right: 20px;
-    position: static;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    padding-right: 30px;
+    margin: 0;
   }
 }
 
@@ -64,77 +58,42 @@
 }
 
 .nav__item {
+  text-align: center;
+  padding: 18px;
+  border-bottom: 1px solid $form_border;
+
   @media (min-width: $tablet-width) {
     margin-right: 33px;
+    padding: 0;
+    border: none;
   }
 
   &:last-child {
+    @media (min-width: $tablet-width) {
     margin-right: 0;
   }
 }
-
-.nav__button {
-  width: 35px;
-  height: 35px;
-  border: none;
-  background-color: $basic_white;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
-.nav__button::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 55px;
-  width: 24px;
-  height: 19px;
-  background-image:url("../../img/index-img/logo_line_mobile.svg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+// .nav__list--active .nav__item {
+//   padding-bottom: 18px;
+//   padding-top: 18px;
+//   border-bottom: 1px solid $form_border;
+//   border-top: 1px solid #e7e7e7;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+//   @media (min-width: $tablet-width) {
+//     border: none;
+//   }
+// }
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
+// .nav__list--active .nav__item:nth-child(2) {
+//   border-top: none;
+// }
 
-.nav__list--active .nav__item {
-  padding-bottom: 18px;
-  padding-top: 18px;
-  border-bottom: 1px solid $form_border;
-  border-top: 1px solid #e7e7e7;
+// .nav__list--active .nav__item:last-child {
+//   border: none;
 
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.nav__list--active .nav__item:nth-child(2) {
-  border-top: none;
-}
-
-.nav__item {
-  padding-bottom: 18px;
-  padding-top: 18px;
-  border-bottom: 1px solid $form_border;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.nav__list--active .nav__item:last-child {
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     margin-right: 0;
+//   }
+// }

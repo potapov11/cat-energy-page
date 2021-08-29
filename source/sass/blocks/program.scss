@@ -24,11 +24,12 @@
     position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 }
 
 .program__subtext {
+  margin: 0;
   margin-bottom: 23px;
   border-bottom: 1px solid $index_grey;
   font-family: $font_basic;
@@ -37,6 +38,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     width: 320px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+    font-size: 36px;
   }
 }
 
@@ -131,9 +134,9 @@
   background-position: center center;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 18px;
-    left: 100px;
+    // position: absolute;
+    // bottom: 18px;
+    // left: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,13 +146,15 @@
 
 .program__button--slim {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 20px;
-    left: 103px;
+    display: inline-block;
+    // position: absolute;
+    // bottom: 20px;
+    // left: 103px;
+    margin-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 195px;
+    // top: 195px;
   }
 }
 
@@ -172,9 +177,9 @@
 
 .program__button--pro {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 18px;
-    left: 100px;
+    // position: absolute;
+    // bottom: 18px;
+    // left: 100px;
   }
 
   @media (min-width: $desktop-width) {
