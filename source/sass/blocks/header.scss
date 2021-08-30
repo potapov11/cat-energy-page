@@ -17,8 +17,15 @@
     .header__nav {
       display: block;
     }
+
+    .header__button {
+      background-image: url("../../img/index-img/logo_mobile_cross.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
   }
 }
+
 
 .header__button {
   margin-left: auto;
@@ -44,14 +51,6 @@
     flex-wrap: wrap;
     width: auto;
     justify-content: flex-end;
-  }
-}
-
-.header--opened {
-  .header__button {
-    background-image:url("../../img/index-img/logo_mobile_cross.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -86,6 +85,11 @@
   }
 }
 
+.header__form--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header--wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +98,7 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-   flex-wrap: nowrap;
-   justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }

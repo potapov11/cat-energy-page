@@ -13,16 +13,6 @@
   }
 }
 
-.wrapper--form-content {
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-  }
-}
-
-.wrapper--small-menu {
-  padding: 0;
-}
-
 .wrapper--contacts {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -41,16 +31,5 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 80px;
     grid-row-gap: 40px;
-  }
-}
-
-.wrapper--form {
-  display: flex;
-  padding-top: 10px;
-  margin-bottom: 12px;
-
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
   }
 }

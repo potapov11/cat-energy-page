@@ -1,39 +1,22 @@
 .food {
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background-color: $green;
-  //   width: 100%;
-  //   height: 320px;
-  //   z-index: -1;
-  // }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    padding-left: 90px;
-    position: relative;
-  }
-}
-
-.food {
   position: relative;
-  background-color: $green_light;
   width: 100%;
-  height: 302px;
-  background-image: url("../../img/index-img/food-bg.png");
+  // background-image: url("../../img/index-img/food-bg.png"), background-color: $green_light;;
+  background: url("../img/index-img/food-bg.png") , linear-gradient(to right, ($green_light), ($green_light));
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 320px 320px;
   border: 1px solid transparent;
+  padding-bottom: 20px;
   text-align: center;
-  padding-bottom: 0;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    height: 100%;
+    padding-left: 90px;
+    position: relative;
     background: none;
-    padding-bottom: 550px;
     background-color: none;
   }
 
@@ -47,7 +30,7 @@
   margin: 0;
   margin-top: 25px;
   margin-bottom: 27px;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $basic_white;
@@ -56,6 +39,8 @@
     margin: 0 0 41px 0;
     color: $title_black;
     text-align: left;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,14 +95,14 @@
 }
 
 .food__img {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     order: 4;
     width: 709px;
     height: 609px;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    z-index: -1;
+    margin-top: -64px;
+    margin-left: -61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,8 +110,18 @@
     height: 499px;
     position: absolute;
     top: -35px;
-    left: 400px;
+    left: 38%;
     z-index: 1;
+  }
+}
+
+.food__info {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -134,7 +129,7 @@
   @media (min-width: $desktop-width) {
     display: none;
     width: 50%;
-    background-image: url("../../img/index-img/tablet-green-cat.png");
+    background-image: url("../img/index-img/tablet-green-cat.png");
     background-repeat: no-repeat;
   }
 }

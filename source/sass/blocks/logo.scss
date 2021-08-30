@@ -1,9 +1,11 @@
 .logo {
   display: flex;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     width: auto;
     display: flex;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

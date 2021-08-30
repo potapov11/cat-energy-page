@@ -1,8 +1,8 @@
 .program {
-  padding-top: 20px;
   padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 45px;
   }
 }
@@ -18,12 +18,20 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
     display: grid;
     grid-template-columns: 70% 30%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -31,11 +39,14 @@
 .program__subtext {
   margin: 0;
   margin-bottom: 23px;
+  padding-bottom: 23px;
   border-bottom: 1px solid $index_grey;
   font-family: $font_basic;
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 58px;
     grid-column: 1/2;
     width: 320px;
     border: none;
@@ -48,8 +59,8 @@
 
 .program__link {
   position: relative;
-  display: inline-block;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -58,8 +69,36 @@
   font-family: $font_custom;
   text-transform: uppercase;
 
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 17px;
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/index-img/arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 28px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    background-image: url("../img/index-img/arrow-big.svg");
+    width: 32px;
   }
 }
 
@@ -124,87 +163,36 @@
   }
 }
 
+.program__buttons {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+}
+
 .program__button {
   display: inline-block;
-  width: 20px;
+  width: 25px;
   height: 10px;
-  background-image: url("../../img/index-img/arrow.svg");
+  margin-left: 4px;
+  background-image: url("../img/index-img/arrow.svg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
 
   @media (min-width: $tablet-width) {
-    // position: absolute;
-    // bottom: 18px;
-    // left: 100px;
+    width: 25px;
+    margin-left: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 199px;
-  }
-}
-
-.program__button--slim {
-  @media (min-width: $tablet-width) {
-    display: inline-block;
-    // position: absolute;
-    // bottom: 20px;
-    // left: 103px;
-    margin-left: 16px;
+    margin-left: 27px;
   }
 
-  @media (min-width: $desktop-width) {
-    // top: 195px;
-  }
-}
-
-.program__button--slim:hover {
-  display: inline-block;
-  width: 28px;
-  height: 10px;
-  background-image: url("../../img/index-img/arrow-big.svg");
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 20px;
-    left: 103px;
+  &:hover {
+    background-image: url("../img/index-img/arrow-big.svg");
+    width: 32px;
   }
 
-  @media (min-width: $desktop-width) {
-    top: 195px;
+  &:active {
+    opacity: 0.3;
   }
-}
-
-.program__button--pro {
-  @media (min-width: $tablet-width) {
-    // position: absolute;
-    // bottom: 18px;
-    // left: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 203px;
-  }
-}
-
-.program__button--pro:hover {
-  display: inline-block;
-  width: 28px;
-  height: 10px;
-  background-image: url("../../img/index-img/arrow-big.svg");
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 18px;
-    left: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 203px;
-  }
-}
-
-.program__link:active,
-.program__button:active {
-  opacity: 0.3;
 }
