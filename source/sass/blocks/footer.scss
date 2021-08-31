@@ -4,7 +4,7 @@
   }
 }
 
-.footer__wrapper--contacts {
+.footer__container {
   @media (min-width: $desktop-width) {
     display: flex;
     padding-top: 95px;
@@ -84,7 +84,7 @@
 
 .footer__info {
   background-color: $basic_grey;
-  padding: 55px 30px 61px 30px;
+  padding: 55px 0 61px 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -159,25 +159,25 @@
   }
 }
 
-.footer__bottom-img:hover path {
-  fill: $green;
-}
+.footer__bottom-img {
+  &:hover path {
+    fill: $green;
+  }
 
-.footer__bottom-img:active path {
-  opacity: 0.3;
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .footer__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
     flex-direction: row;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

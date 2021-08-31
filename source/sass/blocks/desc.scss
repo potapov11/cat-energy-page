@@ -51,14 +51,13 @@
       content: counter(desc-list-counter);
       position: absolute;
       top: -46px;
-      right: 53%;
+      right: 34%;
       color: $basic_grey;
       font-family: $font_custom;
       font-size: 280px;
       line-height: 280px;
       font-weight: 400;
       z-index: -1;
-      transform: translate(50%);
     }
 
     @media (min-width: $desktop-width) {

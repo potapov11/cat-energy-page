@@ -1,4 +1,4 @@
-.title__bold {
+.title--bold {
   font-family: $font_custom;
   font-weight: 400;
   font-size: 36px;
@@ -13,13 +13,5 @@
   @media (min-width: $desktop-width) {
     font-size: 60px;
     line-height: 60px;
-  }
-}
-
-.title__bold--food {
-  color: $basic_white;
-
-  @media (min-width: $tablet-width) {
-    color: $title_black;
   }
 }
