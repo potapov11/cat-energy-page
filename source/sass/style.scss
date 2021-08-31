@@ -8,6 +8,7 @@
 @import "global/global.scss";
 
 //Блоки
+@import "blocks/logo.scss";
 @import "blocks/social.scss";
 @import "blocks/button.scss";
 @import "blocks/desc.scss";
@@ -15,11 +16,12 @@
 @import "blocks/food.scss";
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
-@import "blocks/nav-header.scss";
+@import "blocks/nav.scss";
 @import "blocks/page-body.scss";
 @import "blocks/page.scss";
 @import "blocks/program.scss";
 @import "blocks/title.scss";
+@import "blocks/slider.scss";
 
 //catalog
 @import "blocks/catalog.scss";
@@ -30,11 +32,8 @@
 //form
 @import "blocks/form-content.scss";
 @import "blocks/form-title.scss";
-@import "blocks/checkbox__list.scss";
-@import "blocks/footer__group.scss";
+@import "blocks/checkbox-list.scss";
 @import "blocks/text-field.scss";
-@import "blocks/form__group.scss";
-@import "blocks/form__field.scss";
 @import "blocks/contacts-list.scss";
 @import "blocks/textarea.scss";
 @import "blocks/form.scss";

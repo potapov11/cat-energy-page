@@ -14,3 +14,11 @@
     margin-right: 0;
   }
 }
+
+.social__icon:hover path {
+  stroke: $green;
+}
+
+.social__icon:active path {
+  opacity: 0.3;
+}

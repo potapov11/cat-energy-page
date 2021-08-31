@@ -15,3 +15,11 @@
     line-height: 60px;
   }
 }
+
+.title__bold--food {
+  color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    color: $title_black;
+  }
+}

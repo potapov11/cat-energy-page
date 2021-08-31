@@ -13,12 +13,6 @@
   }
 }
 
-.wrapper--form-content {
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-  }
-}
-
 .wrapper--contacts {
   @media (min-width: $desktop-width) {
     display: flex;

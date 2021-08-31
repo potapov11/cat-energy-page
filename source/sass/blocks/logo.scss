@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 95px;
+  }
+}
+
+.logo__img--cat {
+  margin-right: auto;
+}
+
+.logo__img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

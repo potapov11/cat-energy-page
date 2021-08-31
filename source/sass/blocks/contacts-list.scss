@@ -1,11 +1,46 @@
+.contacts-list {
+  position: relative;
+}
+
 .contacts-list__input {
+  position: relative;
   text-transform: uppercase;
   padding: 14px;
   width: 100%;
+  border: 1px solid $special_grey;
+}
+
+.contacts-list__item::before {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 14px;
+  width: 18px;
+  height: 13px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.contacts-list__item--mail::before {
+  background-image: url("../../img/form-img/letter.svg");
+}
+
+.contacts-list__item--tel::before {
+  background-image: url("../../img/form-img/phone.svg");
+  top: 71px;
+  right: 11px;
+  width: 20px;
+  height: 20px;
 }
 
 .contacts-list__label--email {
   width: 70px;
+}
+
+.contacts-list__label--tel {
+  margin-right: 10px;
 }
 
 .contacts-list__label {
@@ -38,7 +73,7 @@
   }
 }
 
-.contacts__group-form {
+.group-form {
   @media (min-width: $desktop-width) {
     grid-column: 1/-1;
   }

@@ -1,22 +1,104 @@
-
-.header__nav {
-  display: flex;
-  align-items: center;
-  padding: 10px 0 17px 0;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-  }
-}
-
 .header {
+  padding: 10px 0 18px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
-    padding-bottom: 65px;
+    padding-top: 25px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 70px;
     padding-bottom: 72px;
+  }
+
+  &--opened {
+    padding-bottom: 0;
+
+    .header__nav {
+      display: block;
+    }
+
+    .header__button {
+      background-image: url("../../img/index-img/logo_mobile_cross.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.header__button {
+  margin-left: auto;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../img/index-img/logo_line_mobile.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__nav {
+  width: 100%;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: flex-end;
+  }
+}
+
+.header--index::before {
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+    width: 50%;
+    height: 694px;
+    background-image: url("../../img/index-img/bg_cat_other.png");
+    background-color: $green;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.header--index::after {
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 50%;
+    height: 694px;
+    background-color: $green;
+    opacity: 0.85;
+  }
+}
+
+.header__form--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }

@@ -12,22 +12,23 @@
     <!---Header--->
     <header class="header">
       <div class="wrapper">
-        <nav class="header__nav nav">
-          <a class="nav__logo" href="#">
-            <img src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
-            <img src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
+        <nav class="header__nav nav header__nav--closed header__nav-nojs"> <!----header__nav--active--->
+          <a class="logo" href="#">
+            <img class="logo__img logo__img--cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+            <img class="logo__img logo__img--text"src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
           </a>
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Каталог продукции</a>
+              <a class="nav__link nav__link--current" href="">Каталог продукции</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
+          <button class="nav__button" type="button"><span class=visually-hidden>Меню</span></button>
         </nav>
       </div>
     </header>
@@ -61,7 +62,7 @@
                   <dd class="desc__value">700 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -86,7 +87,7 @@
                   <dd class="desc__value">1000 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -111,7 +112,7 @@
                   <dd class="desc__value">700 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -136,7 +137,7 @@
                   <dd class="desc__value">1000 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -161,7 +162,7 @@
                   <dd class="desc__value">400 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -186,7 +187,7 @@
                   <dd class="desc__value">700 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item card">
@@ -211,7 +212,7 @@
                   <dd class="desc__value">500 Р.</dd>
                 </div>
               </dl>
-              <a class="button products__link" href="#">Заказать</a>
+              <a class="button products__link" href="#"><span>Заказать</span></a>
             </li>
 
             <li class="products__item show">
@@ -237,25 +238,25 @@
               <h3 class="extra__subtitle">Сахарозаменитель</h3>
               <p class="extra__text">1 упаковка (100 г)</p>
               <p class="extra__subtext">200 Р.</p>
-              <a class="button extra__button" href="#">Заказать</a>
+              <a class="button extra__button" href="#"><span>Заказать</span></a>
             </li>
             <li class="extra__item">
               <h3 class="extra__subtitle">питьевая вода</h3>
               <p class="extra__text">5 литров</p>
               <p class="extra__subtext">50 Р.</p>
-              <a class="button extra__button" href="#">Заказать</a>
+              <a class="button extra__button" href="#"><span>Заказать</span></a>
             </li>
             <li class="extra__item">
               <h3 class="extra__subtitle">молоко</h3>
               <p class="extra__text">1 литр</p>
               <p class="extra__subtext">100 Р.</p>
-              <a class="button extra__button" href="#">Заказать</a>
+              <a class="button extra__button" href="#"><span>Заказать</span></a>
             </li>
             <li class="extra__item">
               <h3 class="extra__subtitle">витамины</h3>
               <p class="extra__text">1 упаковка (30 г)</p>
               <p class="extra__subtext">300 Р.</p>
-              <a class="button extra__button" href="#">Заказать</a>
+              <a class="button extra__button" href="#"><span>Заказать</span></a>
             </li>
           </ul>
           <div class="extra__img">
@@ -267,7 +268,7 @@
 
     <!---Footer--->
     <footer class="footer">
-      <div class="wrapper wrapper--contacts">
+      <div class="wrapper footer--wrapper">
         <div class="footer__group">
           <div class="footer__contacts footer__contacts--margin">
             <p class="footer__invite-text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
@@ -318,5 +319,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
