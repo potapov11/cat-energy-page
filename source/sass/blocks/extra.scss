@@ -25,21 +25,16 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 50px;
-  padding: 0 38px;
+  color: $title_black;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
     margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
     grid-column: 1/-1;
-    margin: 0;
-    margin-bottom: 80px;
   }
 }
 
@@ -48,6 +43,7 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  color: $special_dark-grey-2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -59,11 +55,11 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
   }
 }
 
 .extra__img {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 289px;
@@ -84,10 +80,24 @@
     grid-column: 2/3;
     margin-top: 0;
   }
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 36%;
+    background-image: url("../img/catalog-img/icon_gift.svg");
+    width: 78px;
+    height: 80px;
+  }
 }
 
 .extra__img-text {
-  margin: 180px auto;
+  position: relative;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 35px;
   font-family: $font_basic;
   font-size: 16px;
   line-height: 20px;
@@ -118,17 +128,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 20px;
     grid-column: 2/3;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 20px;
     justify-self: center;
     align-self: center;
-    margin: 0;
   }
 }
 
@@ -152,7 +158,9 @@
 .extra__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 31px;
+  padding-bottom: 15px;
+  padding-top: 13px;
+  border-top: 1px solid $special_grey;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -167,10 +175,10 @@
     align-items: center;
     padding: 15px 0;
   }
+}
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+.extra__item--last-item {
+  margin-bottom: 0;
 }
 
 .extra__button {

@@ -3,7 +3,6 @@
   background-image: url("../img/index-img/food-bg.png"), linear-gradient(to bottom, $green_light 302px, $basic_white 302px);
   background-repeat: no-repeat;
   background-position: top center;
-  // background-size: 320px 302px;
   padding-bottom: 20px;
   text-align: center;
 
@@ -132,5 +131,9 @@
 .food__wrapper {
   @media (min-width: $tablet-width) {
   padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+  padding-bottom: 0;
   }
 }

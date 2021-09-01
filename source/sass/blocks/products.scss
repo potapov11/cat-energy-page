@@ -20,6 +20,7 @@
   font-weight: 400;
   text-decoration: none;
   color: $dark_black;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -34,7 +35,12 @@
 .products__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 
   &:last-child {
     margin-bottom: 0;
@@ -73,7 +79,12 @@
   }
 }
 
+.products__img-link--small {
+  padding-top: 27px;
+}
+
 .products__name-title {
+  width: 55%;
   grid-column: 2/3;
   margin: 0;
 }

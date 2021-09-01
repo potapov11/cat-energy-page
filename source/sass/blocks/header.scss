@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0 18px;
+  border-bottom: 1px solid $index_grey;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
@@ -27,7 +27,6 @@
 
 
 .header__button {
-  margin-left: auto;
   width: 35px;
   height: 35px;
   background-image: url("../../img/index-img/logo_line_mobile.svg");
@@ -92,6 +91,8 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
