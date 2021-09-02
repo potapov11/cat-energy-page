@@ -123,6 +123,12 @@
 
 .desc__row {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .desc__value {

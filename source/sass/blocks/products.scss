@@ -93,6 +93,7 @@
   width: 73px;
   grid-column: 2/3;
   margin: 0;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 158px;
@@ -118,10 +119,4 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 39px;
   }
-}
-
-.desc__row {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid $special_grey;
 }

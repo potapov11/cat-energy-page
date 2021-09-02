@@ -163,6 +163,7 @@
   line-height: 14px;
   grid-column: 2/3;
   justify-self: flex-end;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
