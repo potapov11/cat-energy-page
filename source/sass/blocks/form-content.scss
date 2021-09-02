@@ -4,6 +4,12 @@
   }
 }
 
+.form-content__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+}
+
 .form-content__title {
   font-size: 36px;
   line-height: 36px;
