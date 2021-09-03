@@ -28,7 +28,7 @@
   }
 }
 
-.program__item--last-child{
+.program__item--last-child {
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
@@ -130,6 +130,13 @@
     grid-column: 1/2;
     font-size: 36px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .program__item--slim .program__title::before {
@@ -151,16 +158,6 @@
   height: 52px;
   width: 70px;
   background-image: url("../../img/index-img/cat__fat__svg.svg");
-}
-
-
-.program__title {
-  &::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 .program__buttons {

@@ -25,6 +25,7 @@
       font-size: 20px;
     }
   }
+
   &:hover {
     outline: 1px solid $special_grey;
   }
@@ -32,6 +33,7 @@
   &:focus {
     outline: 2px solid $special_dark-grey;
   }
+
   &:invalid {
     outline: 2px solid $input_pink;
   }
@@ -47,7 +49,7 @@
   &--name {
     width: 45px;
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       width: 70px;
     }
   }
@@ -55,7 +57,7 @@
   &--weight {
     width: 80px;
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       width: 100px;
     }
   }
@@ -63,7 +65,7 @@
   &--age {
     width: 134px;
 
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       width: 160px;
     }
   }

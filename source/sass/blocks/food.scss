@@ -130,10 +130,10 @@
 
 .food__wrapper {
   @media (min-width: $tablet-width) {
-  padding-bottom: 526px;
+    padding-bottom: 526px;
   }
 
   @media (min-width: $desktop-width) {
-  padding-bottom: 0;
+    padding-bottom: 0;
   }
 }

@@ -20,33 +20,33 @@
 
 .contacts-list__item--mail::before {
   @media (min-width: $tablet-width) {
-  position: absolute;
-  background-image: url("../img/form-img/letter.svg");
-  top: 14px;
-  right: 3%;
-  width: 18px;
-  height: 13px;
+    position: absolute;
+    background-image: url("../img/form-img/letter.svg");
+    top: 14px;
+    right: 3%;
+    width: 18px;
+    height: 13px;
   }
 
   @media (min-width: $desktop-width) {
-  top: 14px;
-  left: 42%;
+    top: 14px;
+    left: 42%;
   }
 }
 
 .contacts-list__item--tel::before {
   @media (min-width: $tablet-width) {
-  position: absolute;
-  background-image: url("../img/form-img/phone.svg");
-  top: 70px;
-  right: 13px;
-  width: 20px;
-  height: 20px;
+    position: absolute;
+    background-image: url("../img/form-img/phone.svg");
+    top: 70px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-  top: 13px;
-  right: 13px;
+    top: 13px;
+    right: 13px;
   }
 }
 
