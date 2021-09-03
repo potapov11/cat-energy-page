@@ -1,12 +1,24 @@
 .form-content {
+  padding-top: 25px;
+
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     padding-bottom: 72px;
   }
 }
 
 .form-content__wrapper {
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 800px;
     padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
+    padding: 0 110px;
+    margin: 0;
+    margin-right: auto;
   }
 }
 
@@ -29,6 +41,7 @@
 
 .form-content__subtext {
   color: $title_black;
+  margin: 0;
   margin-bottom: 40px;
   text-transform: uppercase;
 

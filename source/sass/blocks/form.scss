@@ -10,26 +10,33 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
-.form-content__wrapper {
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
+.form__group-contacts {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
   }
 }
 
 .form__group-contacts__list {
   padding-left: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__group__checkbox {
   color: $title_black;
-  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
     grid-column-gap: 37px;
-    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,10 +78,14 @@
 }
 
 .form__group--radio {
-  margin-bottom: 48px;
+  @media (min-width: $tablet-width) {
+    border: 1px solid $form_border;
+    padding: 25px;
+  }
 }
 
 .form__group__title {
+  width: 275px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -82,6 +93,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     font-size: 36px;
     line-height: 36px;
   }
@@ -100,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -122,6 +134,7 @@
 
 .form__button {
   width: 100%;
+  margin-bottom: 21px;
   text-transform: uppercase;
   border: none;
 
@@ -143,6 +156,9 @@
 }
 
 .form__text {
+  margin: 0;
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     width: 45%;

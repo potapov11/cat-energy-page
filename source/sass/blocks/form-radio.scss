@@ -15,8 +15,12 @@
 
 .form-radio-span {
   position: relative;
-  padding-left: 37px;
+  padding-left: 41px;
   padding-top: 4px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
 }
 
 .form-radio-span::before {
@@ -52,4 +56,8 @@
 
 .form-radio-input:disabled + .form-radio-span {
   opacity: 0.3;
+}
+
+.form-radio--last-child {
+  margin-bottom: 0;
 }

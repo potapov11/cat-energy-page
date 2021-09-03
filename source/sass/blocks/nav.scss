@@ -72,6 +72,13 @@
   }
 }
 
+.nav__link--current-form {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $green;
+  }
+}
+
 .nav__item {
   text-align: center;
   padding: 24px 18px;

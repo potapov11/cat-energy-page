@@ -10,25 +10,61 @@
   padding: 14px;
   text-transform: uppercase;
   width: 100%;
-  border: $form_border;
+  border: 1px solid $form_border;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 14px;
+  }
 
   &::placeholder {
     font-family: $font_custom;
-    font-size: 16px;
-    line-height: 18px;
     opacity: 1;
     color: $special_dark-grey;
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+    }
+  }
+  &:hover {
+    outline: 1px solid $special_grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
+  &:invalid {
+    outline: 2px solid $input_pink;
   }
 }
 
-.text-field__label--name {
-  width: 45px;
-}
+.text-field__label {
+  text-transform: uppercase;
 
-.text-field__label--weight {
-  width: 80px;
-}
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 
-.text-field__label--age {
-  width: 134px;
+  &--name {
+    width: 45px;
+
+    @media (min-width: $tablet-width){
+      width: 70px;
+    }
+  }
+
+  &--weight {
+    width: 80px;
+
+    @media (min-width: $tablet-width){
+      width: 100px;
+    }
+  }
+
+  &--age {
+    width: 134px;
+
+    @media (min-width: $tablet-width){
+      width: 160px;
+    }
+  }
 }
