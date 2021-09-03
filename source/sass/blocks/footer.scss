@@ -236,6 +236,16 @@
   }
 }
 
+.footer__wrapper--form {
+  @media (min-width: $tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1060px;
+  }
+}
+
 .footer__catalog-wrapper {
   @media (min-width: $tablet-width) {
     max-width: 100%;

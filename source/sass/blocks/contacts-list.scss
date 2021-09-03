@@ -11,12 +11,7 @@
 }
 
 .contacts-list__item::before {
-  position: absolute;
   content: "";
-  top: 14px;
-  right: 14px;
-  width: 18px;
-  height: 13px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,15 +19,35 @@
 }
 
 .contacts-list__item--mail::before {
+  @media (min-width: $tablet-width) {
+  position: absolute;
   background-image: url("../img/form-img/letter.svg");
+  top: 14px;
+  right: 3%;
+  width: 18px;
+  height: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+  top: 14px;
+  left: 42%;
+  }
 }
 
 .contacts-list__item--tel::before {
+  @media (min-width: $tablet-width) {
+  position: absolute;
   background-image: url("../img/form-img/phone.svg");
-  top: 71px;
-  right: 11px;
+  top: 70px;
+  right: 13px;
   width: 20px;
   height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+  top: 13px;
+  right: 13px;
+  }
 }
 
 .contacts-list__label--email {
