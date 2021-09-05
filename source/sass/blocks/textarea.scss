@@ -37,4 +37,9 @@
   color: $special_dark-grey;
   font-family: $font_custom;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

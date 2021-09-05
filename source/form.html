@@ -44,19 +44,19 @@
           программу питания для вашего кота</p>
           <form class="form" method="POST" action="https://echo.htmlacademy.ru/ ">
             <!----Text-->
-              <fieldset class="form__group form__name">
+              <fieldset class="form__group form__group--name">
                 <legend class="visually-hidden">Задает параметры</legend>
-                <ul class="form__list form__name-list">
+                <ul class="form__list form__list--name">
                   <li class="form__field text-field">
-                    <label class="text-field__label text-field__label--name" for="name">Имя:*</label>
+                    <label class="text-field__label" for="name">Имя:*</label>
                     <input class="text-field__input" type="text" id="name" placeholder="Барсик">
                   </li>
                   <li class="form__field text-field">
-                    <label class="text-field__label text-field__label--weight" for="weight">Вес (кг):*</label>
+                    <label class="text-field__label" for="weight">Вес (кг):*</label>
                     <input class="text-field__input" type="text" id="weight" placeholder="7">
                   </li>
-                  <li class="form__field text-field">
-                    <label class="text-field__label text-field__label--age" for="age">Возраст (лет):</label>
+                  <li class="form__field text-field text-field--last">
+                    <label class="text-field__label" for="age">Возраст (лет):</label>
                     <input class="text-field__input" type="text" id="age" placeholder="7">
                   </li>
                 </ul>
@@ -65,55 +65,55 @@
               <!---radio--->
               <fieldset class="form__group form__group--radio">
                 <legend class="visually-hidden">Выбирает варианты программы</legend>
-                <ul class="form__list radio-list">
-                  <li class="form__radio form-radio">
-                    <label class="form-radio-label" for="weight-loss">
-                      <input class="form-radio-input" type="radio" name="choice" checked id="weight-loss" value="weight-loss">
-                      <span class="form-radio-span">Похудение</span>
+                <ul class="form__list form__list--radio">
+                  <li class="form__radio form-radio form-radio--first-child">
+                    <label class="form-radio__label" for="weight-loss">
+                      <input class="form-radio__input" type="radio" name="choice" checked id="weight-loss" value="weight-loss">
+                      <span class="form-radio__span">Похудение</span>
                     </label>
                   </li>
                   <li class="form__radio form-radio">
-                    <label class="form-radio-label" for="more-mass">
-                      <input class="form-radio-input" type="radio" name="choice" id="more-mass" value="more-mass">
-                      <span class="form-radio-span">Набор массы</span>
+                    <label class="form-radio__label" for="more-mass">
+                      <input class="form-radio__input" type="radio" name="choice" id="more-mass" value="more-mass">
+                      <span class="form-radio__span">Набор массы</span>
                     </label>
                   </li>
                   <li class="form__radio form-radio form-radio--last-child">
-                    <label class="form-radio-label" for="advice">
-                      <input class="form-radio-input" type="radio" name="choice" id="advice" value="advice">
-                      <span class="form-radio-span">Не знаю (Нужен ваш совет)</span>
+                    <label class="form-radio__label" for="advice">
+                      <input class="form-radio__input" type="radio" name="choice" id="advice" value="advice">
+                      <span class="form-radio__span">Не знаю (Нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
               <!---Contacts--->
-              <fieldset class="form__group form__group-contacts">
-                <legend class="form__group__title form__title">Контактные данные (владельца кота)</legend>
-                <ul class="form__group-contacts__list contacts-list">
-                  <li class="contacts-list__item contacts-list__item--mail">
-                    <label class="contacts-list__label contacts-list__label--email" for="mail">E-mail:*</label>
-                    <input class="contacts-list__input" type="email" id="mail" placeholder="kuklachev@gmail.com">
+              <fieldset class="form__group form__group--contacts">
+                <legend class="form__group-title form__title">Контактные данные (владельца кота)</legend>
+                <ul class="contacts-list">
+                  <li class="contacts-list__item contacts-list__item--mail text-field">
+                    <label class="text-field__label" for="mail">E-mail:*</label>
+                    <input class="text-field__input" type="email" id="mail" placeholder="kuklachev@gmail.com">
                   </li>
-                  <li class="contacts-list__item contacts-list__item--tel">
-                    <label class="contacts-list__label contacts-list__label--tel" for="tel">Телефон:*</label>
-                    <input class="contacts-list__input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
+                  <li class="contacts-list__item contacts-list__item--tel text-field">
+                    <label class="text-field__label" for="tel">Телефон:*</label>
+                    <input class="text-field__input" type="tel" id="tel" placeholder="8 (960) 900-60-90">
                   </li>
                 </ul>
               </fieldset>
 
               <!---Comment--->
-              <fieldset class="form__group textarea">
+              <fieldset class="form__group textarea text-field">
                 <legend class="textarea__title form__title">Комментарий</legend>
-                <textarea class="textarea__field" name="comment"
+                <textarea class="text-field__input text-field__input--textarea" name="comment"
                   id="comment_text" cols="30" rows="10"
                   placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
 
               <!---More--->
-              <fieldset class="form__group form__group__checkbox">
-                <legend class="form__group__checkbox__title form__title">Дополнительно</legend>
-                <ul class="form__group__checkbox-list checkbox-list">
+              <fieldset class="form__group form__group--checkbox">
+                <legend class="form__title">Дополнительно</legend>
+                <ul class="checkbox-list">
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label" for="checkbox-sweetener">
                       <input class="checkbox-list__input" type="checkbox" name="sweetener" id="checkbox-sweetener" value="sweetener"

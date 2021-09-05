@@ -3,4 +3,14 @@
   line-height: 26px;
   font-weight: 400;
   color: $title_black;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
