@@ -1,6 +1,30 @@
 .form-content {
+  padding-top: 25px;
+
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     padding-bottom: 72px;
+  }
+}
+
+.form-content__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
+    padding: 0 110px;
+    margin: 0 auto;
+    margin-right: auto;
+  }
+}
+
+.form-content__wrapper--margin {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -18,11 +42,17 @@
     line-height: 60px;
     margin-bottom: 54px;
     font-weight: 400;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
   }
 }
 
 .form-content__subtext {
   color: $title_black;
+  margin: 0;
   margin-bottom: 40px;
   text-transform: uppercase;
 

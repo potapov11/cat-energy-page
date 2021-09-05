@@ -1,16 +1,21 @@
 .logo {
-  display: flex;
-  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    display: flex;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-right: 95px;
+.logo--text-cat {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
   }
+}
+
+.logo--img-cat {
+  margin-right: 10px;
 }
 
 .logo__img--cat {

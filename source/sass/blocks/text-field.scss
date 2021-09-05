@@ -1,34 +1,85 @@
 .text-field {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
+
+  &--last {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .text-field__input {
+  font-family: inherit;
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
-  padding: 14px;
+  padding: 14px 15px;
   text-transform: uppercase;
-  width: 100%;
-  border: $form_border;
+  flex-grow: 1;
+  border: 1px solid $form_border;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--textarea {
+    resize: vertical;
+    height: 150px;
+    padding: 9px 15px;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 19px;
+    }
+  }
 
   &::placeholder {
-    font-family: $font_custom;
     font-size: 16px;
     line-height: 18px;
     opacity: 1;
     color: $special_dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &:hover {
+    outline: 1px solid $special_grey;
+  }
+
+  &:focus {
+    outline: 1px solid $special_dark-grey;
+    border: 1px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid $input_pink;
   }
 }
 
-.text-field__label--name {
-  width: 45px;
-}
+.text-field__label {
+  text-transform: uppercase;
+  margin-right: 13px;
 
-.text-field__label--weight {
-  width: 80px;
-}
-
-.text-field__label--age {
-  width: 134px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

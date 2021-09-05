@@ -1,14 +1,15 @@
 .catalog {
-  margin-bottom: 70px;
+  padding-top: 27px;
+  padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 63px;
     padding-bottom: 72px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 72px;
-    margin-bottom: 0;
+    padding-top: 0;
   }
 }
 
@@ -26,13 +27,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-    padding-bottom: 0;
     margin-bottom: 82px;
+    font-family: $font_custom;
   }
 }
 
 .catalog__list {
   @include list-reset;
+  margin: -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

@@ -1,6 +1,10 @@
 .desc {
   font-weight: 400;
-  padding-bottom: 60px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .desc__list {
@@ -51,14 +55,13 @@
       content: counter(desc-list-counter);
       position: absolute;
       top: -46px;
-      right: 53%;
+      right: 34%;
       color: $basic_grey;
       font-family: $font_custom;
       font-size: 280px;
       line-height: 280px;
       font-weight: 400;
       z-index: -1;
-      transform: translate(50%);
     }
 
     @media (min-width: $desktop-width) {
@@ -120,6 +123,12 @@
 
 .desc__row {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid $special_grey;
+  }
 }
 
 .desc__value {
