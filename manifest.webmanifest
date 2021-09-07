@@ -1,5 +1,5 @@
-// {
-//   "icons": [
-//     { "src": "source/favicons/favicon-152.svg", "type": "image/svg", "sizes": "152x152" },
-//   ]
-// }
+{
+  "icons": [
+    { "src": "source/favicons/favicon-152-png.png", "type": "image/svg", "sizes": "152x152" },
+  ]
+}

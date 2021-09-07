@@ -6,6 +6,11 @@
   padding-bottom: 20px;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-img/food-bg-x2.png"), linear-gradient(to bottom, $green_light 302px, $basic_white 302px);
+    background-size: auto 302px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-bottom: 0;
@@ -15,6 +20,11 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 277px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/food-desktop-bg-x2.png");
+      background-size: 1117px 696px;
+    }
   }
 }
 
@@ -93,8 +103,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     position: absolute;
-    top: 32%;
-    left: 0;
+    top: 68%;
+    left: -16%;
     z-index: -1;
     width: 709px;
     height: 609px;
@@ -113,6 +123,7 @@
 .food__info {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .food__background {

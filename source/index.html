@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="favicons/favicon-152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicons/favicon-152.svg">
+    <link rel="apple-touch-icon" href="favicons/favicon-152-png.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
@@ -16,7 +16,10 @@
       <h1 class="visually-hidden">Магазин Cat Energy - программы и питания для похудения для котов</h1>
       <div class="wrapper header__wrapper">
         <a class="logo logo--img-cat" href="#">
-          <img class="logo__img logo__img--cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+          <picture>
+            <source media="(min-width: 760px)" srcset="img/index-img/logo-tablet.svg">
+            <img class="logo__img logo__img--cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+          </picture>
         </a>
         <a class="logo logo--text-cat" href="#">
           <img class="logo__img logo__img--text"src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
@@ -47,7 +50,10 @@
           <div class="food__info">
             <h2 class="food__title food__title--bold">Функциональное<br> питание для котов</h2>
             <p class="food__text">Занялся собой? Займись котом!</p>
-            <img class="food__img" width="280" height="270" src="img/index-img/food-bg-main.png" alt="Изображение питания для котов">
+            <img class="food__img" width="280" height="270"
+              src="img/index-img/food-bg-main.png"
+              srcset="img/index-img/food-bg-main-x2.png 2x"
+              alt="Изображение питания для котов">
             <a class="food__button button" href="form.html"><span>Подобрать программу</a>
           </div>
         </div>

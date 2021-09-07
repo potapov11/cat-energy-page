@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="favicons/favicon-152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicons/favicon-152.svg">
+    <link rel="apple-touch-icon" href="favicons/favicon-152-png.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
@@ -17,7 +17,10 @@
     <header class="header header--no-js">
       <div class="wrapper header__form-wrapper header__form-wrapper--box">
         <a class="logo logo--img-cat" href="#">
-          <img class="logo__img logo__img--cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+          <picture>
+            <source media="(min-width: 760px)" srcset="img/index-img/logo-tablet.svg">
+            <img class="logo__img logo__img--cat" src="img/index-img/logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="37">
+          </picture>
         </a>
         <a class="logo logo--text-cat" href="#">
           <img class="logo__img logo__img--text"src="img/index-img/logo-text.svg" alt="текстовый логотип" width="101" height="18">
