@@ -46,8 +46,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    background-image:
-    linear-gradient(to bottom, $basic_white 50px, $basic_grey 50px);
+    background-image: inear-gradient(to bottom, $basic_white 50px, $basic_grey 50px);
     padding: 0 38px;
     padding-bottom: 40px;
     margin-bottom: 0;

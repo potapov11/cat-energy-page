@@ -96,10 +96,10 @@
 
   &--radio {
   @media (min-width: $desktop-width) {
-    border: 1px solid $form_border;
-    padding: 18px 28px 25px 28px;
+      border: 1px solid $form_border;
+      padding: 18px 28px 25px 28px;
+    }
   }
-}
 
   &--name {
     @media (min-width: $desktop-width) {
