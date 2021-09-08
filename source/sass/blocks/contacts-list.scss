@@ -35,54 +35,13 @@
   }
 }
 
+
 .contacts-list__item {
   position: relative;
-  &::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    transform: translateY(-50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &--mail {
-    &::before {
-      background-image: url("../img/form-img/letter.svg");
-    }
-  }
-
-  &--tel {
-    &::before {
-      background-image: url("../img/form-img/phone.svg");
-    }
-  }
 }
 
-// .contacts-list__item--mail::before {
-//   position: absolute;
-//   background-image: url("../img/form-img/letter.svg");
-//   top: 14px;
-//   right: 3%;
-//   width: 18px;
-//   height: 13px;
-// }
-
-// .contacts-list__item--tel::before {
-//   position: absolute;
-//   background-image: url("../img/form-img/phone.svg");
-//   top: 11px;
-//   right: 13px;
-//   width: 20px;
-//   height: 20px;
-
-//   @media (min-width: $desktop-width) {
-//     top: 13px;
-//     right: 13px;
-//   }
-// }
+.contacts-list__svg {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}

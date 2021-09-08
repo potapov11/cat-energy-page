@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 43px;
   padding-bottom: 70px;
+  background-color: $slider_grey;;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $basic_white 472px, $slider_grey 472px);
@@ -19,9 +20,6 @@
 
 .example__wrapper {
   min-height: 703px;
-  background-image: linear-gradient(to right, $basic_white 31px, $slider_grey 31px);
-  background-repeat: no-repeat;
-  background-position: top center;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -118,7 +116,7 @@
   width: 66%;
   bottom: -10px;
   left: 18%;
-  background-color: $basic_grey;
+  background-color: $slider_grey;
 
   @media (min-width: $tablet-width) {
     background-color: $basic_white;

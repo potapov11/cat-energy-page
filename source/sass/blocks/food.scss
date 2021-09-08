@@ -21,10 +21,11 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 277px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-img/food-desktop-bg-x2.png");
-      background-size: 1117px 696px;
-    }
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../img/index-img/food-bg-desktop-x2.png");
+    //   background-size: 720px 694px;
+    //   background-repeat: no-repeat;
+    // }
   }
 }
 
@@ -124,15 +125,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.food__background {
-  @media (min-width: $desktop-width) {
-    display: none;
-    width: 50%;
-    background-image: url("../img/index-img/tablet-green-cat.png");
-    background-repeat: no-repeat;
-  }
 }
 
 .food__title--bold {

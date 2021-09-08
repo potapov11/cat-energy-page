@@ -65,10 +65,16 @@
     z-index: -1;
     width: 50%;
     height: 694px;
-    background-image: url("../../img/index-img/bg_cat_other.png");
+    background-image: url("../img/index-img/food-bg-desktop.png");
     background-color: $green;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-img/food-bg-desktop-x2.png");
+      background-size: 720px 694px;
+      background-repeat: no-repeat;
+    }
   }
 }
 
