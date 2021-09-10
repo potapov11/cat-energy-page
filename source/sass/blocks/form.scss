@@ -17,21 +17,48 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 72px;
   }
 
   &--name {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $index_grey;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      border: none;
+    }
+
     @media (min-width: $desktop-width) {
       margin: 0;
     }
   }
 
+  &--radio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $index_grey;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 88px;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-bottom: 0;
+    }
+  }
+
   &--checkbox {
     color: $title_black;
+    padding-bottom: 32px;
 
     @media (min-width: $tablet-width) {
       grid-column: 1/-1;
       grid-column-gap: 37px;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -42,23 +69,26 @@
   }
 
   &--contacts {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+
     @media (min-width: $desktop-width) {
       grid-column: 1/-1;
     }
   }
-}
 
-.form__group--radio {
+  &--textarea {
+    margin-bottom: 22px;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 25px;
-    margin-bottom: 88px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
 }
+
 
 .form__group-title {
   width: 275px;
@@ -66,7 +96,6 @@
   line-height: 26px;
   font-weight: 400;
   color: $title_black;
-  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -95,6 +124,9 @@
   @include list-reset;
 
   &--radio {
+    padding: 25px 27px;
+    border: 1px solid $form_border;
+
   @media (min-width: $desktop-width) {
       border: 1px solid $form_border;
       padding: 18px 28px 25px 28px;
@@ -124,7 +156,7 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 45%;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 0;
   }
 }
@@ -143,6 +175,7 @@
 
   @media (min-width: $desktop-width) {
     display: inline-block;
+    margin-left: 40px;
     width: 45%;
   }
 }
