@@ -98,18 +98,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
-  &--box {
-    @media (min-width: $tablet-width) {
-      max-width: 800px;
-    }
-
-    @media (min-width: $desktop-width) {
-      max-width: 1060px;
-      padding: 0;
-      margin: 0 auto;
-    }
-  }
 }
 
 .header__wrapper {

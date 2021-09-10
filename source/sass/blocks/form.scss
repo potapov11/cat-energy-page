@@ -36,7 +36,7 @@
 
   &--radio {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
     margin-bottom: 30px;
     border-bottom: 1px solid $index_grey;
 
@@ -89,9 +89,17 @@
   }
 }
 
+.form__field {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 .form__group-title {
   width: 275px;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
