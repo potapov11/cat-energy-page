@@ -15,6 +15,10 @@
   text-transform: uppercase;
   cursor: pointer;
   background-color: $slider_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .slider__span {
@@ -22,6 +26,23 @@
     display: inline-block;
     padding-bottom: 6px;
     border-bottom: 1px dotted $slider-dark_grey;
+  }
+}
+
+.slider__cat {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 600px;
+    height: 520px;
+    right: 0px;
+  }
+
+  &--skinny {
+    position: absolute;
+    display: none;
+    width: 600px;
+    height: 520px;
+    right: 0px;
   }
 }
 
@@ -77,4 +98,8 @@
 
 .slider__preview {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 550px;
+  }
 }
