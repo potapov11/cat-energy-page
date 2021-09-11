@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     padding-top: 95px;
-    padding-bottom: 89px;
+    padding-bottom: 77px;
     background-color: $basic_white;
   }
 
@@ -23,15 +23,6 @@
     background-color: $basic_grey;
 
     @media (min-width: $desktop-width) {
-      display: flex;
-      padding-top: 95px;
-      padding-bottom: 89px;
-      padding-right: 110px;
-      background-color: $basic_grey;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 110px;
       max-width: 1280px;
     }
   }
@@ -247,16 +238,6 @@
       align-items: baseline;
       padding: 0;
     }
-  }
-}
-
-.footer__wrapper--form {
-  @media (min-width: $tablet-width) {
-    max-width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1060px;
   }
 }
 

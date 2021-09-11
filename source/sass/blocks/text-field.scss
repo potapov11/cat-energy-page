@@ -1,7 +1,6 @@
 .text-field {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;

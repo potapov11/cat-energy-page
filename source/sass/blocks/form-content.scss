@@ -7,27 +7,6 @@
   }
 }
 
-.form-content__wrapper {
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1280px;
-    padding: 0 110px;
-    margin: 0 auto;
-    margin-right: auto;
-  }
-}
-
-.form-content__wrapper--margin {
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-  }
-}
-
 .form-content__title {
   font-size: 36px;
   line-height: 36px;

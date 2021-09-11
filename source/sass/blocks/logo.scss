@@ -20,6 +20,11 @@
 
 .logo__img--cat {
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 69px;
+    height: 50px;
+  }
 }
 
 .logo__img {
