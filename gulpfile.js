@@ -51,7 +51,46 @@ const script = () => {
 
 exports.script = script;
 
+//Images
+const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.optimizeImages = optimizeImages;
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.copyImages = copyImages;
+
 exports.html = html;
+
+//Webp
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.createWebp = createWebp;
+
+
+//Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+
 // Server
 
 const server = (done) => {
