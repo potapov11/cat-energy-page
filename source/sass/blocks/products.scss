@@ -46,12 +46,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    // min-height: 414px;
     background-image: linear-gradient(to bottom, $basic_white 100px, $basic_grey 100px);
     padding: 0 38px;
     padding-bottom: 40px;
     margin-bottom: 0;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 245px;
   }
 
   &--second-last {
@@ -96,11 +99,21 @@
     padding-bottom: 32px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    padding-bottom: 3px;
+  }
+
     &--small {
       margin-top: 27px;
 
         @media (min-width: $tablet-width) {
           margin-top: 0;
+      }
+
+        @media (min-width: $desktop-width) {
+        margin-top: 1px;
+        margin-left: 7px;
       }
     }
 
