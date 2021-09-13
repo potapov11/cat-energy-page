@@ -40,8 +40,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   @media (min-width: $tablet-width) {
@@ -62,7 +63,11 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    margin: 0;
+    margin-right: 18px;
     font-size: 16px;
+    text-align: right;
   }
 }
 
@@ -71,6 +76,10 @@
   background-color: $basic_grey;
   height: 352px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -101,8 +110,10 @@
   @media (min-width: $tablet-width) {
     width: auto;
     display: flex;
+    align-items: center;
     border: none;
     padding: 0;
+    padding-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,6 +130,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 47px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -133,6 +145,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -145,6 +158,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-right: 20px;
   }
 
   &:hover {
@@ -169,6 +183,11 @@
 .footer__contacts--margin {
   margin-right: 17px;;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
+    margin-top: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 72px;
   }
@@ -181,7 +200,7 @@
   color: $special_dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin-right: 10px;
+    margin-right: 23px;
   }
 
   &:active {
@@ -203,9 +222,10 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: end;
     flex-direction: row;
     width: 100%;
   }
@@ -253,7 +273,9 @@
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 0 59px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 59px;
     max-width: 660px;
   }
 
@@ -272,5 +294,13 @@
 
   @media (min-width: $desktop-width) {
     background-color: $basic_white;
+  }
+}
+
+.footer__span {
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 21px;
   }
 }

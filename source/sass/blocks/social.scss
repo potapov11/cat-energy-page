@@ -8,7 +8,7 @@
 }
 
 .social__item {
-  margin-right: 34px;
+  margin-right: 29px;
 
   &:last-child {
     margin-right: 0;
@@ -21,4 +21,25 @@
 
 .social__icon:active path {
   opacity: 0.3;
+}
+
+.social__vk {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 17px;
+  }
+}
+
+.social__inst {
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.social__fb {
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 29px;
+  }
 }

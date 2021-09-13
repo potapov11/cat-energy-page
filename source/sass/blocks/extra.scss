@@ -1,5 +1,9 @@
 .extra {
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .extra--wrapper {
@@ -12,6 +16,10 @@
 .extra__list {
   @include list-reset;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/5;
@@ -108,8 +116,8 @@
     height: 80px;
 
     @media (min-width: $tablet-width) {
-      top: 36%;
-      left: 22%;
+      top: 29%;
+    left: 17%;
     }
 
     @media (min-width: $desktop-width) {
@@ -146,11 +154,13 @@
   width: 170px;
 
   @media (min-width: $tablet-width) {
-    width: 160px;
+    width: auto;
     grid-column: 2/3;
     margin: 0;
+    padding-left: 13px;
+    padding-right: 43px;
+    margin-top: 73px;
     text-align: left;
-    margin-top: 71px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,6 +204,7 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 4px;
     grid-column: 3/4;
   }
 
@@ -211,7 +222,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 50% 36% 14%;
+    grid-template-columns: 51% 34% 15%;
     padding: 26px 38px 26px;
     border: 1px solid $special_grey;
     border-top: none;
