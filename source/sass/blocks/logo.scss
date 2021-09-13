@@ -1,5 +1,5 @@
 .logo {
-  padding-top: 10px;
+  padding-top: 13px;
   padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
@@ -9,13 +9,15 @@
 }
 
 .logo--text-cat {
+  padding-top: 15px;
+
   @media (min-width: $tablet-width) {
     margin-right: auto;
   }
 }
 
 .logo--img-cat {
-  margin-right: 10px;
+  margin-right: 4px;
 }
 
 .logo__img--cat {

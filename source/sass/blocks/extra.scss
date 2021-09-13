@@ -1,5 +1,5 @@
 .extra {
-  padding-bottom: 76px;
+  padding-bottom: 38px;
 }
 
 .extra--wrapper {
@@ -11,7 +11,7 @@
 
 .extra__list {
   @include list-reset;
-  margin-bottom: 55px;
+  margin-bottom: 36px;
 
   @media (min-width: $desktop-width) {
     grid-column: 1/5;
@@ -24,7 +24,7 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   color: $title_black;
 
   @media (min-width: $tablet-width) {
@@ -41,6 +41,9 @@
 }
 
 .extra__subtitle {
+  grid-column: 1/-1;
+  margin: 0;
+  margin-top: 13px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -97,7 +100,7 @@
     display: block;
     content: "";
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     background-image: url("../img/catalog-img/icon_gift.svg");
@@ -116,7 +119,7 @@
   }
 
   &--padding {
-    padding-left: 60px;
+    padding-left: 54px;
     padding-right: 60px;
     padding-bottom: 43px;
   }
@@ -158,6 +161,10 @@
 }
 
 .extra__text {
+  margin: 0;
+  margin-top: 11px;
+  margin-bottom: 13px;
+  align-self: center;
   font-family: $font_basic;
   font-size: 14px;
   line-height: 20px;
@@ -178,12 +185,13 @@
 }
 
 .extra__subtext {
-  font-family: $font_basic;
-  font-size: 14px;
-  line-height: 14px;
   grid-column: 2/3;
   justify-self: flex-end;
   margin: 0;
+  align-self: center;
+  font-family: $font_basic;
+  font-size: 14px;
+  line-height: 14px;
 
   @media (min-width: $tablet-width) {
     grid-column: 3/4;
@@ -198,7 +206,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 15px;
-  padding-top: 13px;
+  padding-top: 1px;
   border-top: 1px solid $special_grey;
 
   @media (min-width: $tablet-width) {

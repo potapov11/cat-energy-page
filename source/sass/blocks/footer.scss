@@ -92,8 +92,8 @@
 }
 
 .footer__list {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 17px;
   width: 100%;
   border-top: 1px solid $index_grey;
   border-bottom: 1px solid $index_grey;
@@ -127,11 +127,9 @@
 .footer__link {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
   justify-content: space-between;
-  margin-top: 22px;
+  margin-top: 17px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -143,7 +141,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 52px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -169,7 +167,7 @@
 }
 
 .footer__contacts--margin {
-  margin-right: 5px;
+  margin-right: 17px;;
 
   @media (min-width: $desktop-width) {
     margin-right: 72px;
@@ -250,10 +248,9 @@
 
 .footer__group {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 5px;
   max-width: 500px;
   margin: 0 auto;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 0 59px 0;
