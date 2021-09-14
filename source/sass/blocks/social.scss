@@ -8,7 +8,11 @@
 }
 
 .social__item {
-  margin-right: 29px;
+  margin-right: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 31px;
+  }
 
   &:last-child {
     margin-right: 0;

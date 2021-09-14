@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 87px;
+  }
 }
 
 .extra--wrapper {
@@ -121,8 +125,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 17%;
-      left: 48%;
+      top: 19%;
+      left: 50%;
     }
   }
 
@@ -166,6 +170,8 @@
   @media (min-width: $desktop-width) {
     margin-top: auto;
     width: auto;
+    padding-left: 10px;
+    padding-right: 13px;
     text-align: center;
   }
 }
