@@ -19,12 +19,18 @@
   }
 }
 
-.social__icon:hover path {
-  stroke: $green;
-}
+.social__link {
+  color: $special_dark-grey;
 
-.social__icon:active path {
-  opacity: 0.3;
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 0.3;
+  }
 }
 
 .social__vk {

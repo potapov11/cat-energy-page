@@ -43,6 +43,7 @@
 
 .contacts-list__svg {
   position: absolute;
-  top: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 15px;
 }
