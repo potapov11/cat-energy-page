@@ -52,8 +52,8 @@
 
 .form-radio__span::after {
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   position: absolute;
   top: 12px;
@@ -62,8 +62,8 @@
   opacity: 0;
 
   @media (min-width: $desktop-width) {
-    top: 13px;
-    left: 13px;
+    top: 15px;
+    left: 14px;
   }
 }
 

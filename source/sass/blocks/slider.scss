@@ -26,6 +26,14 @@
     display: inline-block;
     padding-bottom: 6px;
     border-bottom: 1px dotted $slider-dark_grey;
+
+    &:hover {
+      border-bottom: 1px solid $slider-dark_grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -34,7 +42,7 @@
     position: absolute;
     width: 600px;
     height: 520px;
-    right: 0px;
+    right: 100px;
   }
 
   &--skinny {
@@ -93,6 +101,10 @@
     background-color: $basic_white;
     border: 1px solid $special_grey;
     border-radius: 50%;
+  }
+
+  &:active {
+    border: 1px solid $green;
   }
 }
 

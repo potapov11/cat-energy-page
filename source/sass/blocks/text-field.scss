@@ -1,4 +1,5 @@
 .text-field {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -25,6 +26,7 @@
   padding: 14px 15px;
   text-transform: uppercase;
   flex-grow: 1;
+  outline: none;
   border: 1px solid $form_border;
 
   @media (min-width: $desktop-width) {
@@ -44,6 +46,7 @@
   }
 
   &::placeholder {
+    display: block;
     font-size: 16px;
     line-height: 18px;
     opacity: 1;
@@ -61,16 +64,22 @@
   }
 
   &:hover {
-    outline: 1px solid $special_grey;
+    border: 1px solid $special_grey;
   }
 
   &:focus {
-    outline: 1px solid $special_dark-grey;
+    box-shadow: 0 0 0 1px $special_dark-grey;
     border: 1px solid $special_dark-grey;
   }
 
   &:invalid {
-    outline: 2px solid $input_pink;
+    box-shadow: 0 0 0 1px $input_pink;
+    border: 1px solid $input_pink;
+    color: $input_pink;
+  }
+
+  &:invalid + .text-field__icon {
+    color:$input_pink;
   }
 }
 
@@ -80,5 +89,55 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+}
+
+
+.text-field__input:hover + .text-field__icon,
+.text-field__input:focus + .text-field__icon{
+  color: $green;
+}
+
+.text-field__input:active {
+  color: $green;
+  opacity: 0.3;
+}
+
+.text-field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.text-field__name {
+  padding-right: 41px;
+  background-color: $basic_white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px;
+  }
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-right: -50vw;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: $green;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -50vw;
+      top: 20px;
+    }
+  }
+
+  &--host {
+    width: 49%;
+    display: block;
   }
 }

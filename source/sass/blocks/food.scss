@@ -20,12 +20,6 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 277px;
-
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/index-img/food-bg-desktop-x2.png");
-    //   background-size: 720px 694px;
-    //   background-repeat: no-repeat;
-    // }
   }
 }
 
@@ -116,7 +110,7 @@
     height: 499px;
     position: absolute;
     top: -35px;
-    left: 38%;
+    left: 28%;
     z-index: 1;
   }
 }

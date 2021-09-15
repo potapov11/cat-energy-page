@@ -7,6 +7,10 @@
   }
 }
 
+.form-content {
+  overflow-x: hidden;
+}
+
 .form__group {
   border: none;
   margin: 0;
@@ -89,6 +93,10 @@
   }
 }
 
+.form__group .text-field__input--textarea::placeholder {
+  display: block;
+}
+
 .form__field {
   margin-bottom: 13px;
 
@@ -98,17 +106,18 @@
 }
 
 .form__group-title {
-  width: 275px;
   padding: 0;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: $title_black;
+  padding-right: 42px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 100%;
     font-size: 36px;
     line-height: 36px;
+    margin-left: -40px;
   }
 
   @media (min-width: $desktop-width) {
