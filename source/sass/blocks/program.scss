@@ -1,5 +1,5 @@
 .program {
-  padding-bottom: 45px;
+  padding-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -18,8 +18,8 @@
 
 .program__item {
   background-color: $basic_grey;
-  padding: 21px 33px 18px 22px;
-  margin-bottom: 20px;
+  padding: 24px 33px 18px 22px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -37,6 +37,7 @@
 
 .program__item--last-child {
   margin-bottom: 0;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -54,7 +55,7 @@
 
 .program__subtext {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid $index_grey;
   font-family: $font_basic;
@@ -142,8 +143,8 @@
 .program__title {
   position: relative;
   margin: 0;
-  margin-bottom: 22px;
-  padding-left: 60px;
+  margin-bottom: 30px;
+  padding-left: 68px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;

@@ -1,6 +1,6 @@
 .example {
   position: relative;
-  padding-top: 43px;
+  padding-top: 27px;
   padding-bottom: 70px;
   background-color: $slider_grey;
 
@@ -51,7 +51,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
@@ -103,6 +103,7 @@
   display: inline-flex;
   align-self: center;
   margin: 0;
+  width: 81px;
   margin: -5px 0 0;
   padding: 0 12px;
   font-family: $font_basic;
