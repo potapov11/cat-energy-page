@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 23px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-top: 28px;
+  margin-right: 33px;
+  margin-left: 38px;
 }
 
 .slider__button-text {
@@ -38,6 +38,9 @@
 }
 
 .slider__cat {
+  width: 320px;
+  height: 232px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 600px;
@@ -57,7 +60,7 @@
 .slider__scale {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 42%;
   height: 14px;
   padding: 4px 6px;
   border: 1px solid $special_grey;
