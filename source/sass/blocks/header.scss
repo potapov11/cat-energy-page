@@ -80,17 +80,16 @@
 }
 
 .header--index::after {
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    width: 50%;
-    height: 694px;
-    background-color: $green;
-    opacity: 0.85;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: $green;
+  height: 694px;
+  width: 50%;
+  opacity: .85;
+  top: 0;
+  right: 0;
 }
 
 .header__form-wrapper {
