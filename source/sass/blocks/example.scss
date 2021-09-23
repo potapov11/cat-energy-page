@@ -1,11 +1,12 @@
 .example {
   position: relative;
-  padding-top: 43px;
-  padding-bottom: 70px;
+  padding-top: 27px;
+  padding-bottom: 38px;
   background-color: $slider_grey;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, $slider_grey 472px, $basic_white 472px);
+    padding-bottom: 66px;
+    background-image: linear-gradient(to top, $slider_grey 434px, $basic_white 434px);
     background-repeat: no-repeat;
     background-position: top center;
   }
@@ -51,10 +52,11 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,7 +68,7 @@
 .example__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 31px;
+  grid-column-gap: 38px;
 
   @include list-reset;
 
@@ -86,6 +88,11 @@
   color: $title_black;
   border: 1px solid $special-grey;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__item {
@@ -103,9 +110,9 @@
   display: inline-flex;
   align-self: center;
   margin: 0;
+  width: 81px;
   margin: -5px 0 0;
   padding: 0 12px;
-  width: 75px;
   font-family: $font_basic;
   font-size: 12px;
   line-height: 12px;
@@ -118,6 +125,8 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic_white;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,18 +135,9 @@
   }
 }
 
-// .example__item-text--days {
-//   @media (min-width: $tablet-width) {
-//     padding: 0 10px;
-//     width: 80%;
-//     bottom: -5px;
-//     left: 12%;
-// //   }
-// }
-
 .example__subtext {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 17px;
   font-family: $font_custom;
   font-size: 14px;
   line-height: 20px;
@@ -146,9 +146,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
     justify-self: end;
     font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,11 +163,12 @@
 
 .example__subtext-inner {
   display: inline-block;
-  padding-left: 7px;
 
   @media (min-width: $tablet-width) {
     display: block;
     padding-left: 84px;
+    text-align: end;
+    margin-top: 8px;
   }
 
   @media (min-width: $tablet-width) {
@@ -178,7 +180,7 @@
 .example__inner {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 52% 48%;
   }
 
   @media (min-width: $desktop-width) {
@@ -188,6 +190,10 @@
 
 .example__slider {
   margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     flex: 0 1 50%;

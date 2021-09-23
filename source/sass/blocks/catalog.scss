@@ -1,16 +1,21 @@
 .catalog {
   padding-top: 27px;
-  padding-bottom: 70px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     padding-top: 63px;
-    padding-bottom: 72px;
+    padding-bottom: 64px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 81px;
   }
+}
+
+.catalog-content {
+  overflow-x: hidden;
 }
 
 .catalog__title {
@@ -27,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 51px;
     font-family: $font_custom;
   }
 }

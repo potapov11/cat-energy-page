@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
   }
 }
 
@@ -67,7 +72,7 @@
 
 .nav__link--current-catalog {
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     border-bottom: 2px solid $green;
   }
 }
@@ -81,7 +86,7 @@
 
 .nav__item {
   text-align: center;
-  padding: 24px 18px;
+  padding: 22px 18px;
   border-top: 1px solid $form_border;
   border-bottom: 1px solid $form_border;
 
@@ -90,7 +95,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 33px;
+    margin-right: 36px;
     padding: 0;
     border: none;
   }

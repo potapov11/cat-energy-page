@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 67px;
+    margin-top: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 62px;
@@ -23,7 +23,7 @@
 
     .header__button {
       background-image: url("../../img/index-img/logo_mobile_cross.svg");
-      background-position: center center;
+      background-position: 11px center;
       background-repeat: no-repeat;
     }
   }
@@ -34,7 +34,7 @@
   width: 35px;
   height: 35px;
   background-image: url("../../img/index-img/logo_line_mobile.svg");
-  background-position: center center;
+  background-position: 11px center;
   background-repeat: no-repeat;
   border: none;
   background-color: $basic_white;
@@ -80,17 +80,16 @@
 }
 
 .header--index::after {
-  @media (min-width: $desktop-width) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    width: 50%;
-    height: 694px;
-    background-color: $green;
-    opacity: 0.85;
-  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: $green;
+  height: 694px;
+  width: 50%;
+  opacity: .85;
+  top: 0;
+  right: 0;
 }
 
 .header__form-wrapper {
@@ -105,6 +104,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-top: 1px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;

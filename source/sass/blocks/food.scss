@@ -12,20 +12,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 61px;
     padding-bottom: 0;
-    padding-left: 90px;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 277px;
-
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("../img/index-img/food-bg-desktop-x2.png");
-    //   background-size: 720px 694px;
-    //   background-repeat: no-repeat;
-    // }
+    padding-top: 33px;
   }
 }
 
@@ -64,6 +58,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+    margin-left: 90px;
     font-size: 20px;
     line-height: 20px;
     color: $title_black;
@@ -76,6 +71,7 @@
     font-size: 20px;
     line-height: 20px;
     color: $title_black;
+    margin-left: 0;
   }
 }
 
@@ -83,6 +79,7 @@
   @media (min-width: $tablet-width) {
     order: 3;
     padding-bottom: 17px;
+    margin-left: 90px;
     padding-top: 17px;
     font-size: 20px;
     line-height: 20px;
@@ -95,6 +92,7 @@
     grid-column: 1/2;
     padding-bottom: 17px;
     padding-top: 17px;
+    margin-left: 0;
   }
 }
 
@@ -105,7 +103,7 @@
     margin: 0;
     position: absolute;
     top: 68%;
-    left: -16%;
+    left: 0;
     z-index: -1;
     width: 709px;
     height: 609px;
@@ -115,8 +113,8 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    top: -35px;
-    left: 38%;
+    top: -84px;
+    left: 43%;
     z-index: 1;
   }
 }
@@ -125,6 +123,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 161px;
+  }
 }
 
 .food__title--bold {
@@ -132,6 +134,12 @@
 
   @media (min-width: $tablet-width) {
     color: $title_black;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 
